@@ -1,0 +1,147 @@
+@import "../reset.less";
+//common settings!
+@backgroundColor: #ffffff ;
+@backgroundColor-gray: #f3f3f3 ;
+
+@backgroundColor-light: #f6f6f6 ;
+
+@baseBackgroundcolor : #03d6d1 ;
+@baseBackgroundcolor-hover: #03d6d1 ;
+
+@fontColor: #333333 ;
+@fontColor-light: #aaaaaa ;
+@fontHoverColor: @baseBackgroundcolor ;
+@fontColor-white: #ffffff;
+@fontSize: 14px ;
+@fontFamily: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,"sans-serif" ;
+
+@borderColor: #dddddd ;
+@borderColor-dark: #bbbbbb ;
+@borderColor-dash: #cccccc ;
+
+@headerHeight :  50px ;
+
+html {
+  font-family: @fontFamily;
+  font-size: @fontSize;
+  color: @fontColor;
+  height: 100%;
+  width: 100%;
+  min-width: 250px;
+  body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-size: inherit;
+    .sprite-h5_delete_2{
+      display: none;
+      position: absolute;
+      right:10px;
+      top: 15px;
+      &.registerDelete{
+        right: 112px;
+      }
+    }
+    .sprite-h5_delete{
+      display: none;
+      position: absolute;
+      right:10px;
+      top: 15px;
+      &.registerDelete{
+        right: 112px;
+      }
+    }
+    .errorTips{
+      display: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 40px;
+      background-color: #FFD9D9;
+      font-size: 15px;
+      color: #FF4040;
+      text-align: center;
+      span{
+        line-height: 40px;
+      }
+    }
+    button,input{
+      border-radius:6px;
+    }
+    .common-submit{
+      background-color: #2fcaff;
+      color: white;
+    }
+    .header{
+      height: @headerHeight ;
+      width: 100% ;
+      background-color: @backgroundColor ;
+      position: absolute;
+      top: 0px ;
+
+      .logo{
+        color:#42e0d8;
+        font-size: 24px;
+        margin-left: 14%;
+        margin-top: 14px;
+        float: left;
+      }
+      .Vertical{
+        width: 1px;
+        height: 22px;
+        background-color: #dddddd;
+        display: inline-block;
+        margin-left: -93px;
+        margin-top: 21px;
+      }
+      .team{
+        color:#333333;
+        font-size: 18px;
+        float: left;
+        margin-left: 44px;
+        padding-top: 17px;
+      }
+    }
+    .Contents{
+      width:100%;
+      height:100%;
+      .Horizontal-line{
+        height: 2px;
+        width: 80%;
+        position: relative;
+        left:50%;
+        margin-left:-40%;
+        margin-top: 30px;
+        background-color: #dcdcdc;
+      }
+      .inputArea{
+        position: relative;
+        margin-top: 18px;
+      }
+      .text{
+        width:100%;
+        height: 50px;
+        font-size: 14px;
+        padding: 6px 15px;
+        border:1px solid #d9d9d9;
+        &.registerNumber{
+          width: 63%;
+          border: none;
+        }
+      }
+    }
+  }
+  a{
+    text-decoration: blink;
+    color: @fontColor ;
+    cursor: pointer;
+    font-size: @fontSize;
+    &:hover{
+      color: @fontHoverColor;
+    }
+  }
+}
+
+
+
+

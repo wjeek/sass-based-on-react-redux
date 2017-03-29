@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta name="keywords" content="{{meta.keywords}}">
+    <meta name="description" content="{{meta.description}}">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link red="Shortcut Icon" href="{{@static_url}}/resource/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{{@static_url}}/resource/styles/sprite.css" />
+    <link type="text/css" rel="stylesheet" href="{{@static_url}}/resource/styles/m_passport/m_common.css" />
+    <link type="text/css" rel="stylesheet" href="{{@static_url}}/resource/styles/m_passport/m_register.css" />
+</head>
+<body>
+<div class="Contents">
+    <div class="registerBox">
+        <div class="inputArea phone">
+            <input placeholder="手机号码" class="registerNumber text" />
+            <i class="sprite-h5_delete delete registerDelete"></i>
+            <button class="getcode common-submit">获取验证码</button>
+        </div>
+        <div class="inputArea verification">
+            <input placeholder="验证码" class="registerCode text"/>
+            <i class="sprite-h5_delete delete"></i>
+        </div>
+        <div class="inputArea password">
+            <input placeholder="设置密码(最少六个字符)" type='password' class="registerPassword text" />
+            <i class="sprite-h5_delete"></i>
+        </div>
+        <div class="submit">
+            <button class="btn_submit common-submit">提交</button>
+        </div>
+        <div class="tips">
+            <span>注册即表示同意《西狮进销存服务协议》</span>
+        </div>
+        <!--<a class="info jumpLogin" href="/m_passport/m_login">会员登录</a>-->
+    </div>
+</div>
+<div class="errorTips"><span class="tipsContent"></span></div>
+<script src="{{@static_url}}/libs/jquery/jquery-2.1.4.js"></script>
+<script src="{{@static_url}}/scripts/m_common.js"></script>
+<script src="{{@static_url}}/scripts/m_register.js"></script>
+</body>
+</html>
+
+

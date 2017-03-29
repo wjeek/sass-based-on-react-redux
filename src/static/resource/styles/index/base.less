@@ -1,0 +1,586 @@
+@import '../lesshat.less';
+
+/*销售 独有样式*/
+//@baseBackgroundcolor : #03d6d1 ;
+@baseBackgroundcolor : #00c3be ;
+
+@fontColor-white: #ffffff;
+@fontColor-light: #aaaaaa ;
+
+@tableBlueCell: #0066cc ;
+
+@borderColor: #dddddd ;
+
+@tableHeaderBackgroundcolor : #f5fdf7 ;
+@tableBodyerBordercolor: #eeeeee ;
+
+//ehsy color
+//@ehsyBaseColor : #03d6d1 ;
+@ehsyBaseColor : #00c3be ;
+@ehsyBaseColorLight : #f5fdf7 ;
+@ehsyBaseColorDark : #09a276 ;
+
+
+
+/*css namespace*/
+.base-namespace{
+  //货品管理的查询按钮
+  .search-wrap{
+    &.base-product{
+      display: inline-block;
+    }
+  }
+  //product layer1
+  .layer1{
+    .header{
+      height: 75px;
+      line-height: 75px;
+      position: relative;
+
+      .product-name{
+        font-size: 16px;
+        //color:red;
+        color: @ehsyBaseColor ;
+        cursor: pointer;
+        margin-left: 20px;
+        display: inline-block;
+        .transition(all 0.2s ease-out) ;
+        &:hover{
+          .transform(scale(1.2)) ;
+        }
+        i{
+          display: inline-block;
+          position: relative;
+          top: 2px;
+          margin-right: 15px;
+        }
+        .re-arrow{
+
+        }
+      }
+      .operation{
+        position: absolute;
+        right: 40px;
+        top: 18px;
+        //width: 280px;
+        width: 85px;
+        height: 36px;
+        a{
+          display: inline-block;
+          //border: 1px solid @baseBackgroundcolor;
+          border:1px solid #ddd;
+          line-height: 34px;
+          vertical-align: top;
+          text-align: center;
+          &:hover{
+            border: 1px solid @ehsyBaseColor;
+            background: @ehsyBaseColor;
+          }
+        }
+        .left-arrow{
+          width: 36px ;
+          height: 36px ;
+          border-radius: 3px;
+          margin-right: 20px;
+          font-size: 18px;
+          line-height: 31px;
+          color: @fontColor-light;
+        }
+        .edit-arrow{
+          //width: 120px;
+          width: 36px;
+          height: 36px;
+          //border-radius: 3px 0px 0px 3px;
+          border-radius: 3px ;
+          //background-color: @baseBackgroundcolor;
+          background: #ffffff;
+          color: @fontColor-white;
+          i{
+            display: inline-block;
+            position: relative;
+            top: 1px;
+          }
+        }
+        .down-arrow{
+          z-index: 10;
+          display: inline-block;
+          position: relative;
+          //width: 100px;
+          width: 36px;
+          margin-left: 12px;
+          height: 36px;
+          vertical-align: top;
+          text-align: center;
+          border-radius: 3px 3px 3px 3px;
+
+          &:before{
+            content: '' ;
+            position: absolute;
+            width: 36px;
+            height: 10px;
+            top: 35px;
+            left: 0px;
+            background: transparent;
+          }
+          &:after{
+            content: '' ;
+            position: absolute;
+          }
+
+          i{
+            display: inline-block;
+            position: relative;
+            top: -2px;
+          }
+
+          .more-operation-ul{
+            display: none;
+          }
+          &:hover{
+            //background-color: #ddd;
+            background-color: @ehsyBaseColor;
+            cursor: pointer;
+            .more-operation-ul{
+              position: absolute;
+              display: block;
+              width: 110px;
+              //background: #ddd;
+              background: #fff;
+              top: 42px;
+              //right: 35px;
+              right: 0px;
+              border: 1px solid #ddd ;
+              border-radius: 5px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              box-shadow: 0px 0px 13px 1px #ddd;
+
+              li{
+                padding-left: 5px;
+                padding-right: 5px;
+                cursor: pointer;
+                font-size: 12px;
+                color: #666666;
+                .transition(all 0.15s ease-out) ;
+                &:hover{
+                  //background-color: #eee;
+                  background-color: @ehsyBaseColor;
+                  color: #ffffff ;
+                }
+              }
+
+            }
+
+          }
+        }
+
+      }
+    }
+
+    .content-wrap{
+      padding : 30px 40px 40px 40px;
+      box-shadow: 0px 7px 6px 3px #ddd;
+      .content-title{
+        font-size: 16px;
+        color: #333333;
+        margin-bottom: 30px;
+        .title-name{
+
+        }
+      }
+    }
+    .content{
+      table{
+        width: 100%;
+        font-size: 12px;
+        tr{
+          .transition(all 0.15s ease-out) ;
+          &:hover{
+            //background-color: @tableHeaderBackgroundcolor;
+            background-color: #f5f5f5;
+          }
+        }
+        tbody{
+          tr{
+            background-color: @fontColor-white;
+          }
+        }
+        td{
+          text-align: left;
+          padding-left: 40px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border:1px solid @borderColor;
+          border-right: 1px solid #dddddd;
+          .transition(all 0.2s ease-out)
+        }
+        td.cat{
+          color: @fontColor-light;
+          border-left: 1px solid #dddddd;
+          padding-left: 0px;
+          border-right: 0px;
+          width: 30%;
+          text-align: center;
+          padding-left: 0px;
+          background: #f9f9f9;
+
+        }
+      }
+    }
+
+  }
+
+  .filter-wrap{
+    margin-bottom: 20px;
+  }
+
+  //customer
+  .searc-wrap-customer{
+    //padding-top: 0px;
+    //padding-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    text-align: left;
+    .ant-input-wrapper{
+      display: inline-block;
+      margin-right: 10px;
+      width: 220px;
+    }
+    .customer-input{
+      display: inline-block;
+    }
+  }
+
+
+}
+
+
+/*全局modal*/
+.ant-modal{
+  /*.ant-form-item-label{
+    text-align: left;
+    padding-left: 60px;
+  }*/
+  .ant-btn-primary{
+    background-color: @baseBackgroundcolor ;
+    border-color: @baseBackgroundcolor ;
+  }
+}
+.base-modal1{
+  .ant-modal-footer{
+    display: none;
+  }
+  .customer-define{
+    position: absolute;
+    cursor: pointer;
+    right: -65px;
+    top: 0px;
+    color: @tableBlueCell;
+  }
+  .submit-save-add{
+    width: 45%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .submit-save-add.none{
+    display: none;
+  }
+  .submit-save{
+    width: 45%;
+    margin-left: 10%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .submit-save.none{
+    display: none;
+  }
+  .submit-save-edit{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .submit-save-edit.none{
+    display: none;
+  }
+}
+
+
+.base-modal2{
+  width: 700px !important; //!!!!!!!注意了!!!!!!
+  .b-span{
+    display: inline-block;
+  }
+  .b-span1{
+    width: 23% ;
+  }
+  .b-span2{
+    width: 6%;
+    text-align: center;
+  }
+  .b-span3{
+    width: 46%;
+  }
+  .b-span4{
+    width: 6%;
+    text-align: center;
+  }
+  .b-span5{
+    width: 19%;
+  }
+
+
+  .b-span6{
+    width: 32%;
+  }
+  .b-span7{
+    width: 32%;
+    margin-left: 2%;
+  }
+  .b-span8{
+    width: 32%;
+    margin-left: 2%;
+  }
+
+  .ant-modal-footer{
+    display: none;
+  }
+  .submit-save-add{
+    width: 45%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .submit-save-add.none{
+    display: none;
+  }
+  .submit-save{
+    width: 45%;
+    margin-left: 10%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .submit-save.none{
+    display: none;
+  }
+  .submit-save-edit{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .submit-save-edit.none{
+    display: none;
+  }
+}
+
+.base-modal3{
+  .ant-steps{
+    width: 74%;
+    margin: 0 auto;
+    .ant-steps-head-inner{
+      border-color: @baseBackgroundcolor !important;
+      background-color: @baseBackgroundcolor !important;
+    }
+    .ant-steps-status-wait{
+      .ant-steps-head-inner{
+        border-color: #ccc !important;
+        background-color: #fff !important;
+      }
+    }
+  }
+  .ant-modal-content{
+     font-size: 14px;
+    .ant-modal-body{
+      height: 486px;
+    .steps{
+      margin-top: 25px;
+    }
+    .preImport{
+      display: block;
+      &.none{
+        display: none;
+      }
+      .importTips{
+        position: relative;
+        .text1,.text2{
+          display: inline-block;
+          margin-top: 30px;
+        }
+        .text2{
+          color: @fontColor-light;
+          margin-left: 10px;
+          &:hover.text4{
+            display: block;
+          }
+        }
+        .text3{
+          display: block;
+          margin-top: 27px;
+          margin-left: 24px;
+          color: @baseBackgroundcolor;
+        }
+        .text4{
+          display: none;
+          position: absolute;
+          top: 10px;
+          right: 64px;
+          border: 1px solid #00d6b2;
+          padding: 5px;
+          span{
+            display: block;
+            margin-top: 5px;
+          }
+        }
+      }
+      .importForm{
+        margin-top: 20px;
+        .text2{
+          color: @fontColor-light;
+          margin-left: 10px;
+        }
+        .ant-radio-button-wrapper {
+          border-radius: 6px;
+          margin-left: 15px;
+          border: 1px solid #d9d9d9;
+        }
+        .ant-radio-button-wrapper-checked {
+          border: 1px solid #2db7f5;
+          box-shadow: none;
+        }
+        .ant-row{
+          margin-top: 27px;
+          margin-left: 9px;
+        }
+        .import-button{
+          margin-left: 10px;
+        }
+      }
+      .chooseImport{
+        margin-top: 20px;
+        .text2{
+          color: @fontColor-light;
+          margin-left: 10px;
+        }
+      }
+    }
+    .onImport{
+      display: none;
+      &.none{
+        display: block;
+      }
+      .import-percent{
+        margin-top: 40px;
+      }
+      .onImport-text{
+        display: block;
+        //margin-top: 5px;
+        margin-top: 45px;
+      }
+      .tips{
+        margin-top: 50px;
+        color: @fontColor-light;
+        &.finish{
+          display: none;
+        }
+        span{
+          display: block;
+          margin-top: 5px;
+        }
+      }
+      .error{
+        //display: none;
+        margin-top: 50px;
+        color: @fontColor-light;
+        &.finish{
+          display: block;
+        }
+        span{
+          display: block;
+          margin-top: 5px;
+        }
+        a{
+          color: #ff6565;
+          font-size: 12px;
+        }
+      }
+      .closed{
+        position: absolute;
+        top:506px;
+        right:10px;
+      }
+    }
+    }
+  }
+}
+
+
+//resolve antd style
+.base-modal1{
+  form .ant-input-number{
+    width: 100%;
+  }
+}
+
+.base-modal2{
+  .ant-input-number{
+    width: 100%;
+  }
+}
+
+
+//无法用简单的hover规则处理的icon
+.saas-icon{
+  display: inline-block;
+}
+//
+.saas-icon-edit{
+  background-image: url(../../images/customersprite/edit.png);
+  background-position: 0px 0px;
+  width: 15px;
+  height: 15px;
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: url(../../images/customersprite/edit@2x.png);
+    background-size: 15px 15px;
+  }
+}
+.edit-arrow:hover{
+  .saas-icon-edit{
+    background-image: url(../../images/customersprite/edit_white.png);
+    background-position: 0px 0px;
+    width: 15px;
+    height: 15px;
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url(../../images/customersprite/edit_white@2x.png);
+      background-size: 15px 15px;
+    }
+  }
+}
+//
+.saas-icon-more{
+  background-image: url(../../images/customersprite/more.png);
+  background-position: 0px 0px;
+  width: 21px;
+  height: 5px;
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: url(../../images/customersprite/more@2x.png);
+    background-size: 21px 5px;
+  }
+}
+.down-arrow:hover{
+  .saas-icon-more{
+    background-image: url(../../images/customersprite/more_hover.png);
+    background-position: 0px 0px;
+    width: 21px;
+    height: 5px;
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url(../../images/customersprite/more_hover@2x.png);
+      background-size: 21px 5px;
+    }
+  }
+}
+
+
+

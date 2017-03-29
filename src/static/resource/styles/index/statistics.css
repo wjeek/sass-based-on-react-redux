@@ -1,0 +1,23 @@
+.statistics-namespace .statistics-saleChart {
+  position: relative;
+}
+.statistics-namespace .statistics-saleChart .search-btn {
+  margin-left: 20px;
+}
+.statistics-namespace .statistics-saleChart .totalSales {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.statistics-namespace .statistics-saleChart .ant-radio-group {
+  float: right;
+  position: relative;
+  margin-top: 10px;
+  z-index: 9999;
+}
+.statistics-namespace .ant-select-selection__rendered {
+  width: 110px;
+}
+.statistics-namespace .filter-wrap .search-wrap {
+  display: inline-block;
+}

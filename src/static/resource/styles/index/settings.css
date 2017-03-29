@@ -1,0 +1,561 @@
+/*设置 独有样式*/
+/*css namespace*/
+.settings-namespace .company-wrap,
+.settings-namespace .personal-wrap {
+  width: 100%;
+}
+.settings-namespace .company-wrap .ant-form-item-label,
+.settings-namespace .personal-wrap .ant-form-item-label {
+  text-align: left;
+}
+.settings-namespace .company-wrap .ant-form-item-label label,
+.settings-namespace .personal-wrap .ant-form-item-label label {
+  color: #aaaaaa;
+}
+.settings-namespace .company-wrap .ant-form-item,
+.settings-namespace .personal-wrap .ant-form-item {
+  margin-bottom: 10px;
+}
+.settings-namespace .company-wrap .modalopen-edit,
+.settings-namespace .personal-wrap .modalopen-edit {
+  margin-left: 35px;
+  cursor: pointer;
+}
+.settings-namespace .company-wrap .modalopen-edit a,
+.settings-namespace .personal-wrap .modalopen-edit a {
+  color: #0066cc;
+  font-size: 12px;
+}
+.settings-namespace .company-wrap .submit-btn-left,
+.settings-namespace .personal-wrap .submit-btn-left {
+  width: 47%;
+}
+.settings-namespace .company-wrap .submit-btn-right,
+.settings-namespace .personal-wrap .submit-btn-right {
+  margin-left: 6%;
+  width: 47%;
+}
+.settings-namespace .company-wrap .ant-cascader-picker-arrow,
+.settings-namespace .personal-wrap .ant-cascader-picker-arrow {
+  display: none;
+}
+.settings-namespace .company-wrap .b-span,
+.settings-namespace .personal-wrap .b-span {
+  display: inline-block;
+}
+.settings-namespace .company-wrap .b-span .ant-input-wrapper,
+.settings-namespace .personal-wrap .b-span .ant-input-wrapper {
+  margin-right: 0px;
+  width: 100%;
+}
+.settings-namespace .company-wrap .b-span1,
+.settings-namespace .personal-wrap .b-span1 {
+  width: 23% ;
+}
+.settings-namespace .company-wrap .b-span2,
+.settings-namespace .personal-wrap .b-span2 {
+  width: 6%;
+  text-align: center;
+}
+.settings-namespace .company-wrap .b-span3,
+.settings-namespace .personal-wrap .b-span3 {
+  width: 46%;
+}
+.settings-namespace .company-wrap .b-span4,
+.settings-namespace .personal-wrap .b-span4 {
+  width: 6%;
+  text-align: center;
+}
+.settings-namespace .company-wrap .b-span5,
+.settings-namespace .personal-wrap .b-span5 {
+  width: 19%;
+}
+.settings-namespace .company-wrap .b-span6,
+.settings-namespace .personal-wrap .b-span6 {
+  width: 32%;
+}
+.settings-namespace .company-wrap .b-span7,
+.settings-namespace .personal-wrap .b-span7 {
+  width: 32%;
+  margin-left: 2%;
+}
+.settings-namespace .company-wrap .b-span8,
+.settings-namespace .personal-wrap .b-span8 {
+  width: 32%;
+  margin-left: 2%;
+}
+.settings-namespace .search-wrap {
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+.settings-namespace .ant-input-wrapper {
+  display: inline-block;
+  margin-right: 10px;
+  width: 220px;
+}
+.settings-namespace .team-layer1 .form-static {
+  margin-left: 100px;
+}
+.settings-namespace .team-layer1 .form-static .ant-form-item-label {
+  text-align: left;
+  padding-left: 27px;
+}
+.settings-namespace .team-layer1 .edit-arrow {
+  border-radius: 9px;
+}
+.settings-namespace .team-layer1 .content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  top: 70px;
+}
+.settings-namespace .team-layer1 .content.isShow {
+  display: block;
+}
+.settings-namespace .team-layer1 .content .ft-span {
+  padding-left: 27px;
+  font-size: 14px;
+}
+.settings-namespace .team-layer1 .content .ft-span a {
+  color: #0066cc;
+}
+.settings-namespace .team-layer1 .content .l1-title {
+  margin-bottom: 25px;
+}
+.settings-namespace .team-layer1 .content .l1-title a {
+  color: #0066cc;
+}
+.settings-namespace .team-layer1 .content .l1-search .ant-input-wrapper {
+  width: 260px;
+}
+.settings-namespace .team-layer1 .content .l1-search .l1-btn {
+  display: inline-block;
+  width: 100px;
+}
+.settings-namespace .team-layer1 .content .l1-result {
+  overflow: auto;
+  height: 90%;
+}
+.settings-namespace .team-layer1 .content .l1-result .each-result {
+  margin-top: 30px;
+}
+.settings-namespace .team-layer1 .content .l1-result .line-table {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.settings-namespace .team-layer1 .content .l1-result .attr {
+  display: inline-block;
+  width: 15%;
+  color: #aaaaaa;
+}
+.settings-namespace .team-layer1 .content .l1-result .value {
+  display: inline-block;
+  width: 70%;
+}
+.settings-namespace .team-layer2 .form-static {
+  margin-left: 100px;
+}
+.settings-namespace .team-layer2 .form-static .ant-form-item-label {
+  text-align: left;
+  padding-left: 27px;
+}
+.settings-namespace .team-layer2 .edit-arrow-2 {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 20px;
+}
+.settings-namespace .team-layer2 .header {
+  display: none;
+}
+.settings-namespace .team-layer2 .header.isShow {
+  display: block;
+}
+.settings-namespace .team-layer2 .content {
+  display: none;
+}
+.settings-namespace .team-layer2 .content.isShow {
+  display: block;
+}
+.settings-namespace .team-layer2 .content .admin-line {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #dddddd;
+}
+.settings-namespace .team-layer2 .content .admin-line .dot {
+  display: inline-block;
+  width: 5%;
+  height: 100%;
+  line-height: 40px;
+  vertical-align: top;
+  background-color: #eee;
+}
+.settings-namespace .team-layer2 .content .admin-line .name {
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  line-height: 40px;
+  vertical-align: top;
+  padding-left: 10px;
+}
+.settings-namespace .team-layer2 .content .admin-line .phone {
+  display: inline-block;
+  height: 100%;
+  line-height: 40px;
+  vertical-align: top;
+  padding-left: 10px;
+}
+/*全局modal*/
+.settings-modal1 {
+  width: 500px !important;
+}
+.settings-modal1 .ant-modal-body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.settings-modal1 .ant-form-item {
+  margin-bottom: 20px;
+}
+.settingsteam-modal1 {
+  width: 400px !important;
+}
+.settingsteam-modal1 .ant-input-wrapper {
+  display: inline-block;
+  width: 250px;
+  margin-top: 10px;
+}
+.settingsteam-modal1 .content {
+  position: relative;
+  padding: 30px;
+}
+.settingsteam-modal1 .content .co-input {
+  position: relative;
+  width: 300%;
+}
+.settingsteam-modal2 {
+  width: 600px !important;
+}
+.settingsteam-modal2 .ant-modal-body {
+  padding: 45px;
+}
+.settingsteam-modal2 .operation {
+  margin-bottom: 20px;
+}
+.settingsteam-modal2 .operation .op-span1 {
+  width: 104px;
+  border: 1px solid #00c3be;
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+.settingsteam-modal2 .operation .op-span1.active {
+  background-color: #00c3be;
+  color: white;
+  /*color: @baseBackgroundcolor;*/
+}
+.settingsteam-modal2 .operation .op-span2 {
+  border: 1px solid #00c3be;
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  float: right;
+  cursor: pointer;
+}
+.settingsteam-modal2 .ope-content {
+  height: 280px;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #dddddd;
+}
+.settingsteam-modal2 .ope-content .invite-lin {
+  font-size: 14px;
+  border-bottom: 1px solid #dddddd;
+  padding: 5px 10px 5px 10px;
+}
+.settingsteam-modal2 .ope-content .invite-lin .invite-span1 {
+  display: inline-block;
+  width: 25%;
+}
+.settingsteam-modal2 .ope-content .invite-lin .invite-span2 {
+  display: inline-block;
+  width: 30%;
+}
+.settingsteam-modal2 .ope-content .invite-lin .invite-span3 {
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+}
+.settingsteam-modal2 .ope-content .ope-other {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  display: none;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+.settingsteam-modal2 .ope-content .ope-other.active {
+  display: block;
+}
+.settingsteam-modal2 .ope-content .ope-other i {
+  position: absolute;
+  width: 30px ;
+  height: 30px ;
+  top: 5px;
+  right: 5px;
+  background-color: #dddddd;
+  cursor: pointer;
+}
+.settingsteam-modal2 .ope-content .ope-other .a-1 {
+  position: absolute;
+  font-size: 14px;
+  top: 70px;
+  left: 150px;
+}
+.settingsteam-modal2 .ope-content .ope-other .a-2 {
+  position: absolute;
+  font-size: 14px;
+  top: 92px;
+  left: 150px;
+}
+.settingsteam-modal2 .ope-content .ope-other .a-3 {
+  position: absolute;
+  font-size: 14px;
+  top: 182px;
+  left: 150px;
+  width: 120px;
+}
+.settingsteam-modal2 .ope-content .ope-other #copy_text_invitemessage_2 {
+  position: absolute;
+  height: 40px;
+  font-size: 10px;
+  line-height: 12px;
+  top: 122px;
+  left: 25%;
+  width: 60%;
+}
+.settingsteam-modal2 .ope-content .ope-other .b-1 {
+  position: absolute;
+  font-size: 24px;
+  top: 35px;
+  left: 58px;
+}
+.settingsteam-modal2 .ope-content .ope-other .b-1-2 {
+  font-size: 30px;
+  color: red;
+  margin-left: 10px;
+}
+.settingsteam-modal2 .ope-content .ope-other .b-2 {
+  position: absolute;
+  font-size: 14px ;
+  color: #aaaaaa;
+  top: 90px;
+  left: 58px;
+}
+.settingsteam-modal2 .ope-content .ope-other .b-2:before {
+  content: '.';
+  position: absolute;
+  left: -15px;
+  top: -10px;
+  font-size: 20px;
+}
+.settingsteam-modal2 .ope-content .ope-other .b-3 {
+  position: absolute;
+  font-size: 14px ;
+  color: #aaaaaa;
+  top: 112px;
+  left: 58px;
+}
+.settingsteam-modal2 .ope-content .ope-other .b-3:before {
+  content: '.';
+  position: absolute;
+  left: -15px;
+  top: -10px;
+  font-size: 20px;
+}
+.settingsteam-modal2 .ope-content .ope-other .b-4 {
+  position: absolute;
+  font-size: 14px ;
+  border-top: 1px dashed #dddddd;
+  top: 168px;
+  left: 58px;
+  padding-top: 5px;
+}
+.settingsteam-modal2 .ope-content .ope-other .b-5 {
+  position: absolute;
+  font-size: 14px;
+  top: 212px;
+  left: 58px;
+  width: 120px;
+}
+.settingsteam-modal2 .ope-content .ope-other .c-1 {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  top: 18px;
+  left: 131px;
+}
+.settingsteam-modal2 .ope-content .ope-other .c-1 img {
+  width: 100%;
+  height: 100%;
+}
+.feedbackBox {
+  display: none;
+}
+.feedbackBox.list-show {
+  display: block;
+}
+.feedbackBox.typing-show {
+  display: block;
+}
+.feedbackBox .feedbackContents {
+  margin-left: 200px;
+}
+.feedbackBox .feedbackContents .feedbackTypes .types {
+  margin-top: 15px;
+}
+.feedbackBox .feedbackContents .feedbackTypes .types .ant-radio-button-wrapper {
+  border-radius: 6px;
+  margin-left: 15px;
+  border: 1px solid #d9d9d9;
+}
+.feedbackBox .feedbackContents .feedbackTypes .types .ant-radio-button-wrapper-checked {
+  border: 1px solid #2db7f5;
+  box-shadow: none;
+}
+.feedbackBox .feedbackContents .contentText {
+  margin-top: 15px;
+  position: relative;
+}
+.feedbackBox .feedbackContents .contentText .title {
+  display: inline-block;
+  float: left;
+  height: 140px;
+  line-height: 140px;
+  width: 56px;
+}
+.feedbackBox .feedbackContents .contentText .bitian {
+  position: absolute;
+  top: 77px;
+  left: 0px;
+  color: red;
+}
+.feedbackBox .feedbackContents .contentText .ant-input-wrapper {
+  display: inline-block;
+  margin-left: 15px;
+  width: 500px;
+}
+.feedbackBox .feedbackContents .contentText .textLeft {
+  display: block;
+  margin-left: 71px;
+  color: #aaaaaa;
+}
+.feedbackBox .feedbackContents .contentImg {
+  margin-top: 25px;
+  position: relative;
+}
+.feedbackBox .feedbackContents .contentImg .antd-img-uploader {
+  margin-left: 10px;
+}
+.feedbackBox .feedbackContents .contentImg .title {
+  float: left;
+  line-height: 96px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.feedbackBox .feedbackContents .contentImg .imgTips {
+  display: block;
+  margin-left: 71px;
+  color: #aaaaaa;
+}
+.feedbackBox .feedbackContents .contentImg .ant-form-item.ant-row > div {
+  float: left;
+}
+.feedbackBox .feedbackContents .contentImg .ant-upload-select-picture-card i {
+  font-size: 28px;
+  color: #999;
+}
+.feedbackBox .feedbackContents .contentImg .ant-upload-select-picture-card .ant-upload-text {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+}
+.feedbackBox .feedbackContents .contentImg .upload-example {
+  position: relative;
+  display: inline-block;
+  height: 96px;
+  width: 96px;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  vertical-align: top;
+}
+.feedbackBox .feedbackContents .contentImg .upload-example img {
+  height: 78px;
+  width: 78px;
+}
+.feedbackBox .feedbackContents .contentImg .upload-example:before {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  content: ' ';
+  width: 78px;
+  height: 24px;
+  background-color: #808080;
+  opacity: .8;
+}
+.feedbackBox .feedbackContents .contentImg .upload-example span {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 78px;
+  height: 24px;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+}
+.feedbackBox .feedbackContents .contentPhone {
+  margin-top: 25px;
+  position: relative;
+}
+.feedbackBox .feedbackContents .contentPhone .title {
+  display: inline-block;
+  float: left;
+  line-height: 32px;
+  vertical-align: middle;
+}
+.feedbackBox .feedbackContents .contentPhone .ant-input-wrapper {
+  margin-left: 15px;
+}
+.feedbackBox .feedbackContents .contentPhone .phoneTips {
+  display: block;
+  margin-left: 71px;
+  color: #aaaaaa;
+}
+.feedbackBox .feedbackContents .contentPhone .phoneError {
+  display: block;
+  margin-left: 71px;
+  color: red;
+}
+.feedbackBox .feedbackContents .ant-btn {
+  margin-left: 71px;
+  margin-top: 25px;
+  width: 220px;
+  height: 40px;
+}
+.history,
+.changePostPage {
+  float: right;
+  margin-top: 11px;
+  margin-right: 5px;
+}
+.logPage .search-wrap {
+  text-align: center;
+  margin-top: 5px;
+}

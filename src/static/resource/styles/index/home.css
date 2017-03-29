@@ -1,0 +1,764 @@
+/*销售 独有样式*/
+.home-namespace .body {
+  position: absolute;
+  top: 70px;
+  bottom: 15px;
+  width: 100%;
+  overflow-y: auto;
+}
+.home-namespace .crumbs {
+  width: 1200px;
+  margin: 0px auto;
+  display: block;
+  display: none;
+}
+.home-namespace .all-statistics-wrap {
+  width: 1200px;
+  margin: 0px auto;
+}
+.home-namespace .all-statistics {
+  width: 1200px;
+  height: 180px;
+  background: white;
+}
+.home-namespace .all-statistics .comp-title {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.home-namespace .all-statistics .comp-statistics {
+  height: 130px;
+}
+.home-namespace .all-statistics .comp-statistics .each-statistics {
+  display: inline-block;
+  height: 115px;
+  width: 256px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.home-namespace .all-statistics .comp-statistics .each-statistics:hover {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-box-shadow: 0 0 0 5px rgba(45, 245, 153, 0.2);
+  -moz-box-shadow: 0 0 0 5px rgba(45, 245, 153, 0.2);
+  box-shadow: 0 0 0 5px rgba(45, 245, 153, 0.2);
+  border-color: #00c3be;
+  background-color: #f5fdf7;
+}
+.home-namespace .all-statistics .comp-statistics .each-statistics:hover .c-title {
+  background: #f5fdf7;
+}
+.home-namespace .all-statistics .comp-statistics .each-statistics:hover .c-title-text {
+  color: #09a276;
+}
+.home-namespace .all-statistics .comp-statistics .each-statistics .s-title {
+  font-size: 14px;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.home-namespace .all-statistics .comp-statistics .each-statistics .s-count {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1;
+  padding-bottom: 10px;
+  color: #ce3333;
+}
+.home-namespace .all-statistics .comp-statistics .each-statistics .s-foot {
+  text-align: left;
+  border-top: 1px dashed #ccc;
+  padding-top: 8px;
+  color: #aaa;
+}
+.home-namespace .chart-outer-title {
+  font-size: 16px;
+  padding-top: 18px;
+  padding-bottom: 8px;
+}
+.home-namespace .chart-area {
+  width: 1220px;
+}
+.home-namespace .chart-area .e-chart-wrap {
+  position: relative;
+  display: inline-block;
+  width: 590px;
+  height: 350px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  vertical-align: top;
+  border-radius: 3px;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.home-namespace .chart-area .e-chart-wrap:hover:hover {
+  -webkit-box-shadow: 0 0 0 2px rgba(45, 245, 153, 0.35);
+  -moz-box-shadow: 0 0 0 2px rgba(45, 245, 153, 0.35);
+  box-shadow: 0 0 0 2px rgba(45, 245, 153, 0.35);
+  border-color: #09a276;
+}
+.home-namespace .chart-area .e-chart-wrap .c-title {
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+  padding-left: 20px;
+  z-index: 10;
+  cursor: move;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-text {
+  font-size: 14px;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-operation {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-operation .c-operation {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-operation .c-operation .c-operation-ul {
+  display: none;
+}
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-operation .c-operation:hover {
+  background-color: #00c3be;
+}
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-operation .c-operation:hover .c-operation-ul {
+  position: absolute;
+  display: block;
+  width: 100px;
+  background: #00c3be;
+  color: #fff;
+  top: 38px;
+  font-size: 13px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-operation .c-operation:hover .c-operation-ul li {
+  padding-left: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-operation .c-operation:hover .c-operation-ul li:hover {
+  color: #fff;
+  background-color: #09a276;
+}
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-operation .c-operation .sprite-btn_add,
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-operation .c-operation .sprite-btn_setting_s,
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-operation .c-operation .sprite-btn_del_s,
+.home-namespace .chart-area .e-chart-wrap .c-title .c-title-operation .c-operation .sprite-btn_refresh_s {
+  display: inline-block;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content {
+  position: relative;
+  height: 312px;
+  padding: 10px 15px 15px 15px;
+  /* 差异性*/
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .c-count {
+  height: 35px;
+  line-height: 35px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .c-count .c-count-choose {
+  margin-right: 20px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .e-chart {
+  position: absolute;
+  top: 10px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-market {
+  top: 45px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-market .modal-content {
+  padding-left: 20px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-purchase-store {
+  top: 45px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-market-profit {
+  top: 45px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-purchase {
+  top: 45px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-customer {
+  top: 45px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-customer .chart-customer-left,
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-customer .chart-customer-right {
+  float: left;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-warn {
+  top: 45px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-product {
+  top: 45px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-user {
+  top: 45px;
+}
+.home-namespace .chart-area .e-chart-wrap .c-content .chart-record {
+  top: 45px;
+}
+/*差异性*/
+.chart-market-wrap .home-modal-market {
+  z-index: 20;
+  display: none ;
+  position: absolute;
+  top: 0px;
+  width: 590px;
+  height: 350px;
+  background-color: white;
+  vertical-align: top;
+  border-radius: 3px;
+}
+.chart-market-wrap .home-modal-market.content-show {
+  display: inline-block;
+}
+.chart-market-wrap .home-modal-market .ant-btn-primary {
+  display: block;
+  margin: 0 auto;
+}
+.chart-purchase-store-wrap .c-count {
+  position: relative;
+}
+.chart-purchase-store-wrap .left-span {
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 40%;
+  height: 100%;
+}
+.chart-purchase-store-wrap .center-span {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.chart-purchase-store-wrap .right-span {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  text-align: right;
+}
+.chart-customer-wrap .center-span .text-right {
+  margin-left: 20px;
+}
+.chart-record-wrap .c-count {
+  position: relative;
+}
+.chart-record-wrap .left-span {
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 40%;
+  height: 100%;
+  white-space: nowrap;
+}
+.chart-record-wrap .right-span {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  text-align: right;
+}
+.chart-product-wrap .c-count {
+  position: relative;
+}
+.chart-product-wrap .left-span {
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 40%;
+  height: 100%;
+  white-space: nowrap;
+}
+.chart-product-wrap .right-span {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  text-align: right;
+}
+.chart-user-wrap .c-count {
+  position: relative;
+}
+.chart-user-wrap .left-span {
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 40%;
+  height: 100%;
+  white-space: nowrap;
+}
+.chart-user-wrap .right-span {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  text-align: right;
+}
+.chart-config-wrap .ant-customer-icon-large {
+  font-size: 130px;
+  color: #b7e6e5;
+  text-align: center;
+  display: block;
+  padding-top: 70px;
+}
+.chart-config-wrap:hover .checkbox-chart-config {
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.chart-config-wrap .checkbox-chart-config {
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.chart-config-wrap .checkbox-chart-config label.ant-checkbox-wrapper {
+  width: 28%;
+  text-align: center;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.chart-config-wrap .checkbox-chart-config .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+  margin-left: 0px;
+}
+.home-namespace .role-market.all-statistics-wrap .all-statistics {
+  height: 155px ;
+  padding-top: 20px;
+}
+.home-namespace .role-market.all-statistics-wrap .all-statistics .comp-statistics {
+  height: 115px ;
+}
+.home-namespace .role-market.all-statistics-wrap .all-statistics .comp-statistics .each-statistics {
+  cursor: pointer;
+  width: 360px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 18px;
+  padding-top: 18px;
+  color: #BBBBBB;
+}
+.home-namespace .role-market.all-statistics-wrap .all-statistics .comp-statistics .each-statistics .ant-customer-icon-large {
+  font-size: 28px;
+}
+.home-namespace .role-market.all-statistics-wrap .all-statistics .comp-statistics .each-statistics.hide {
+  display: none;
+}
+.home-namespace .role-market.all-statistics-wrap .all-statistics .comp-statistics .each-statistics.targetSet {
+  background-color: #d8fbfa ;
+  font-size: 12px;
+  padding-top: 0px;
+}
+.home-namespace .role-market.all-statistics-wrap .all-statistics .comp-statistics .each-statistics:hover {
+  color: #00c3be;
+}
+.home-namespace .role-market.all-statistics-wrap .all-statistics .comp-statistics .each-statistics .tar-form {
+  height: 30px;
+  line-height: 30px;
+  margin-top: 8px;
+}
+.home-namespace .role-market.all-statistics-wrap .all-statistics .comp-statistics .each-statistics .tar-lable {
+  float: left;
+}
+.home-namespace .role-market.all-statistics-wrap .all-statistics .comp-statistics .each-statistics .tar-input {
+  float: right;
+}
+.home-namespace .role-market.all-statistics-wrap .all-statistics .comp-statistics .each-statistics .tar-ope .tar-cancel {
+  margin-right: 20px;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap {
+  width: 1200px;
+  height: 400px;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-left {
+  position: relative;
+  padding: 15px 15px 15px 15px;
+  height: 400px;
+  width: 900px;
+  float: left;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-left .c-count-span {
+  padding-left: 40px;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-right {
+  height: 330px;
+  width: 300px;
+  float: right;
+  padding: 5px 15px 15px 15px;
+  margin-top: 30px;
+  border-left: 1px dashed #dddddd;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-right .blo {
+  height: 50px;
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-line {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-line .blo-block {
+  height: 25px;
+  line-height: 25px;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-line .blo-block-top {
+  height: 25px;
+  line-height: 25px;
+  border-bottom: 1px solid #dddddd;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-line .blo-block-all {
+  height: 50px;
+  line-height: 50px;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-span {
+  float: right;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-span .blo-title {
+  width: 210px;
+  font-size: 13px;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-span .blo-value {
+  width: 210px;
+  font-size: 24px;
+}
+.home-namespace .role-market.all-statistics-wrap .chart-market-wrap .c-content-right .blo.blo1 {
+  margin-bottom: 50px;
+}
+.home-namespace .role-purchase.all-statistics-wrap .all-statistics {
+  height: 155px ;
+  padding-top: 20px;
+}
+.home-namespace .role-purchase.all-statistics-wrap .all-statistics .comp-statistics {
+  height: 115px ;
+}
+.home-namespace .role-purchase.all-statistics-wrap .all-statistics .comp-statistics .each-statistics {
+  cursor: pointer;
+  width: 360px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 18px;
+  padding-top: 18px;
+  color: #BBBBBB;
+}
+.home-namespace .role-purchase.all-statistics-wrap .all-statistics .comp-statistics .each-statistics .ant-customer-icon-large {
+  font-size: 28px;
+}
+.home-namespace .role-purchase.all-statistics-wrap .all-statistics .comp-statistics .each-statistics:hover {
+  color: #00c3be;
+}
+.home-namespace .role-purchase.all-statistics-wrap .chart-purchase-store-wrap {
+  width: 1200px;
+  height: 500px;
+}
+.home-namespace .role-purchase.all-statistics-wrap .chart-purchase-store-wrap .c-count {
+  height: 30px;
+  border-bottom: 1px dashed #dddddd;
+}
+.home-namespace .role-purchase.all-statistics-wrap .chart-purchase-store-wrap .c-count .left-span {
+  font-size: 15px;
+}
+.home-namespace .role-purchase.all-statistics-wrap .chart-purchase-store-wrap .c-content-left {
+  position: relative;
+  padding: 15px 15px 15px 15px;
+  height: 400px;
+  width: 900px;
+  float: left;
+}
+.home-namespace .role-purchase.all-statistics-wrap .chart-purchase-store-wrap .c-content-left .month-select {
+  height: 90px;
+  padding-top: 35px;
+  padding-left: 130px;
+}
+.home-namespace .role-purchase.all-statistics-wrap .chart-purchase-store-wrap .c-content-right {
+  height: 430px;
+  width: 300px;
+  float: right;
+  padding: 5px 15px 15px 15px;
+  margin-top: 30px;
+  border-left: 1px dashed #dddddd;
+}
+.home-namespace .role-finance.all-statistics-wrap .all-statistics {
+  height: 155px ;
+  padding-top: 20px;
+}
+.home-namespace .role-finance.all-statistics-wrap .all-statistics .comp-statistics {
+  height: 115px ;
+}
+.home-namespace .role-finance.all-statistics-wrap .all-statistics .comp-statistics .each-statistics {
+  width: 360px;
+  text-align: center;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-area .c-title-text {
+  height: 38px;
+  line-height: 38px;
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-area .c-title-text.active {
+  border-bottom: 2px solid #00c3be;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-area .content-hide {
+  display: none;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-warn-wrap {
+  width: 1200px;
+  height: 500px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-warn-wrap .c-count {
+  height: 70px;
+  border-bottom: 1px dashed #dddddd;
+  text-align: center;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-warn-wrap .c-count .left-span {
+  font-size: 15px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-warn-wrap .c-content-left {
+  position: relative;
+  padding: 15px 15px 15px 15px;
+  height: 400px;
+  width: 900px;
+  float: left;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-warn-wrap .c-content-left .mouth-select {
+  height: 90px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-warn-wrap .c-content-right {
+  height: 430px;
+  width: 300px;
+  float: right;
+  padding: 5px 15px 15px 15px;
+  margin-top: 14px;
+  border-left: 1px dashed #dddddd;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-warn-wrap .c-content-right .center-span-title {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-warn-wrap .c-content-right .center-span-money {
+  display: block;
+  font-size: 22px;
+  height: 40px;
+  line-height: 40px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-warn-wrap .c-content-right .center-span-money.font-red {
+  color: red;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-warn-wrap .c-content-right .press-gathering {
+  display: block;
+  margin: 16px auto;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-next-wrap {
+  width: 1200px;
+  height: 500px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-next-wrap .c-count {
+  height: 30px;
+  border-bottom: 1px dashed #dddddd;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-next-wrap .c-count .left-span {
+  font-size: 15px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-next-wrap .c-content-left {
+  position: relative;
+  padding: 15px 15px 15px 15px;
+  height: 400px;
+  width: 900px;
+  float: left;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-next-wrap .c-content-left .mouth-select {
+  height: 90px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-next-wrap .c-content-right {
+  height: 430px;
+  width: 300px;
+  float: right;
+  padding: 5px 15px 15px 15px;
+  margin-top: 14px;
+  border-left: 1px dashed #dddddd;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-next-wrap .c-content-right .table-div {
+  margin-top: -14px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-capital-wrap {
+  width: 1200px;
+  height: 500px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-capital-wrap .c-count {
+  height: 70px;
+  border-bottom: 1px dashed #dddddd;
+  text-align: center;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-capital-wrap .c-count .left-span {
+  font-size: 15px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-capital-wrap .c-content-left {
+  position: relative;
+  padding: 15px 15px 15px 15px;
+  height: 400px;
+  width: 900px;
+  float: left;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-capital-wrap .c-content-left .mouth-select {
+  height: 90px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-capital-wrap .c-content-right {
+  height: 430px;
+  width: 300px;
+  float: right;
+  padding: 5px 15px 15px 15px;
+  margin-top: 30px;
+  border-left: 1px dashed #dddddd;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-capital-wrap .c-content-right .center-span-title {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-capital-wrap .c-content-right .center-span-money {
+  display: block;
+  font-size: 22px;
+  height: 40px;
+  line-height: 40px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-capital-wrap .c-content-right .center-span-money.font-red {
+  color: red;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap {
+  width: 1200px;
+  height: 500px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-count {
+  height: 30px;
+  border-bottom: 1px dashed #dddddd;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-count .left-span {
+  font-size: 15px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-content-left {
+  position: relative;
+  padding: 15px 15px 15px 15px;
+  height: 400px;
+  width: 900px;
+  float: left;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-content-left .mouth-select {
+  height: 90px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-content-right {
+  height: 430px;
+  width: 300px;
+  float: right;
+  padding: 5px 15px 15px 15px;
+  margin-top: 30px;
+  border-left: 1px dashed #dddddd;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-content-right .blo {
+  height: 70px;
+  text-align: center;
+  margin-top: 20px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-line {
+  display: inline-block;
+  height: 70px;
+  width: 50px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-line .blo-block {
+  display: block;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-span {
+  display: inline-block;
+  margin-left: 30px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-span .blo-title {
+  height: 30px;
+  line-height: 30px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-span .blo-value {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 22px;
+}
+.home-namespace .role-finance.all-statistics-wrap .chart-market-wrap .c-content-right .blo .blo-span .blo-value.font-red {
+  color: red;
+}

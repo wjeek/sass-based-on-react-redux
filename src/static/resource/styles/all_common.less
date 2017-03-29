@@ -1,0 +1,596 @@
+//lesshat
+@import "./lesshat.less";
+
+//common settings!
+@backgroundColor: #ffffff ;
+@backgroundColor-gray: #f3f3f3 ;
+
+@backgroundColor-light: #f6f6f6 ;
+
+//@baseBackgroundcolor : #03d6d1 ;
+@baseBackgroundcolor : #00c3be ;
+//@baseBackgroundcolor-hover: #03d6d1 ;
+@baseBackgroundcolor-hover: #00c3be ;
+
+@fontColor: #333333 ;
+@fontColor-light: #aaaaaa ;
+@fontHoverColor: @baseBackgroundcolor ;
+@fontColor-white: #ffffff;
+@fontSize: 14px ;
+@fontFamily: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,"sans-serif" ;
+
+@borderColor: #dddddd ;
+@borderColor-dark: #0bc7bf ;
+@borderColor-dash: #cccccc ;
+
+@windowMinWidth: 1140px ;
+@windowMinHeight: 600px ;
+
+//ehsy color
+//@ehsyBaseColor : #03d6d1 ;
+@ehsyBaseColor : #00c3be ;
+@ehsyBaseColorLight : #f5fdf7 ;
+@ehsyBaseColorDark : #09a276 ;
+
+@ehsyBorderShadow : 0 0 0 2px rgba(45, 245, 171,0.2) ;
+@ehsyLayerBorderShadow : 0 0 0 6px rgba(45, 245, 171,0.2) ;
+
+@blue : #0066cc ; //#0066cc
+//@red : #e60012;
+@red : #FF5E5E ;
+
+html {
+  font-family: @fontFamily;
+  font-size: @fontSize;
+  color: @fontColor;
+  height: 100%;
+  width: 100%;
+  min-width: @windowMinWidth;
+  min-height: @windowMinHeight;
+  body{
+    height: 100%;
+    width: 100%;
+    min-width: @windowMinWidth;
+    min-height: @windowMinHeight;
+    position: relative;
+    font-size: inherit;
+  }
+  a{
+    text-decoration: blink;
+    color: @fontColor ;
+    cursor: pointer;
+    font-size: @fontSize;
+    &:hover{
+      color: @fontHoverColor;
+    }
+  }
+  table{
+    border-collapse: collapse;
+  }
+}
+
+
+li,ol{
+  list-style: none;
+}
+input{
+  &:focus{
+    outline : none ;
+  }
+}
+
+//atom style
+.red{
+  color: @red;
+}
+.red-mark{
+  color: @red;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+}
+.blue{
+  color: @blue;
+}
+.dib{
+  display: inline-block;
+}
+.dib-table-icon{
+  margin-right: 18px;
+  cursor: pointer;
+  display: inline-block;
+  &.sprite-delete{
+    margin-top:0px;
+  }
+  &.sprite-view{
+    margin-top: 2px;
+  }
+  &.sprite-edit{
+    margin-top: 0px;
+  }
+}
+//footer settings
+
+@footerHeight : 50px;
+@headerHeight :  70px ;
+
+.root{
+  position: absolute;
+  //bottom: @footerHeight ;
+  bottom: 0px;
+  top:0px;
+  background-color: @backgroundColor-gray;
+  width: 100%;
+  min-width: @windowMinWidth;
+}
+
+
+.footer{
+
+  //11.7 footer hide
+  display:none;
+
+  height : @footerHeight ;
+  position: absolute;
+  bottom: 0 ;
+  width: 100%;
+  background: @backgroundColor ;
+  .tabs{
+    color: @fontColor-light ;
+    padding-top: 18px;
+    li{
+      display: inline-block;
+      font-size: 12px;
+      color: @fontColor-light;
+      padding-left: 20px;
+      padding-right: 20px;
+      cursor: pointer;
+    }
+    .vertical{
+      width: 1px;
+      height: 12px;
+      background-color: #cccccc;
+      display: inline-block;
+      position: relative;
+      top: 2px;
+    }
+  }
+  .beian{
+    color: @fontColor-light ;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 12px;
+  }
+}
+
+
+/*react component*/
+//@layerHeaderHeight: 70px ;
+@layerHeaderHeight: 120px ;
+.react-component-layer.show{
+  //display: block;
+  left: 0%;
+
+  .layer-mask{
+    //.opacity(1) ;
+    .opacity(0) ;
+  }
+
+}
+.react-component-layer{
+
+  //display: none;
+  display: block;
+
+  z-index: 200;
+  position: fixed;
+
+  .transition(left 0.8s cubic-bezier(0.67, 0, 0.15, 1)) ;
+
+  width: 100%;
+  left: 100%;
+
+  //left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  .layer-mask{
+
+    .transition(opacity 0.35s ease-out 0.8s) ;
+    .opacity(0);
+
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .layer-wrap{
+    height: 100%;
+    width: 60%;
+    float: right;
+    background-color: @backgroundColor;
+    position: relative;
+    .header{
+      height: @layerHeaderHeight;
+      line-height: @layerHeaderHeight;
+      padding-top: 0px;
+      //padding-left: 20px;
+      //padding-right: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+      //border-bottom: 1px solid @borderColor;
+      background: #ffffff;
+
+      position: relative;
+
+      &:after{
+        content:'';
+        height:1px;
+        background: @borderColor;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: 0px;
+      }
+
+      .header-title{
+
+      }
+      .header-operation{
+        float: right;
+        .operation{
+          display: inline-block;
+          //height: 35px;
+          height: 40px;
+          text-align: center;
+          //line-height: 35px;
+          line-height:40px;
+          cursor: pointer;
+        }
+        /*销售market style*/
+      }
+    }
+    .content-wrap{
+      position: absolute;
+      //top: 70px;
+      top: 120px;
+      bottom: 0px;
+      overflow-y: auto;
+      width: 100%;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-left: 50px;
+
+      .content-name{
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 25px;
+      }
+    }
+
+  }
+}
+
+/*ant design theme reset*/
+.root{
+  .ant-pagination-item-active{
+    background-color: @ehsyBaseColor;
+    border-color: @ehsyBaseColor;
+  }
+  .ant-btn-primary {
+    background-color: @baseBackgroundcolor ;
+    border-color: @baseBackgroundcolor ;
+    &:hover{
+
+    }
+  }
+  @tableHeaderBackgroundcolor : #f5fdf7 ;
+  @tableBodyerBordercolor: #eeeeee ;
+  @tableBlueCell: @blue ;
+  @tableRedCell: #e60012 ;
+  .ant-table th{
+    background-color: @tableHeaderBackgroundcolor;
+    padding: 10px 8px;
+  }
+  .ant-table td{
+    font-size: 12px;
+    a{
+      font-size: 12px;
+    }
+    .cell-link{
+      color: @tableBlueCell ;
+    }
+    .cell-notice{
+      color: @tableRedCell ;
+    }
+    .cell-operation{
+      margin-right: 12px;
+    }
+  }
+}
+
+
+//alert style
+.ant-alert-with-description{
+  //width : 450px;
+  display: none;
+  z-index: 100000;
+}
+.ant-alert-success{
+
+}
+.ant-alert-info{
+
+}
+.ant-alert-warning{
+
+}
+.ant-alert-error{
+
+}
+//loading style
+.global-element-loading{
+  position: fixed;
+  display: none;
+  left: 0px;
+  right : 0px;
+  top: 0px;
+  bottom: 0px;
+  //-webkit-transition: all .3s cubic-bezier(.78,.14,.15,.86);
+  //transition: all .3s cubic-bezier(.78,.14,.15,.86);
+  //opacity: .7;
+  //-webkit-filter: blur(1px);
+  //filter: blur(1px);
+  .ant-spin{
+    position: absolute;
+    .ant-spin-dot{
+      margin: 0px auto;
+      display: block !important;
+    }
+  }
+
+}
+//antd Option extend
+.ant-select-dropdown{
+  .antdcustomer-options-delete{
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    font-size: 12px;
+    //color: #2db7f5;
+    color: #fff;
+  }
+  .ant-select-dropdown-menu-item{
+    &:hover{
+      .antdcustomer-options-delete{
+        display: block;
+      }
+    }
+  }
+}
+.ant-select-selection__rendered{
+  .ant-select-selection-selected-value{
+    .antdcustomer-options-delete{
+      display: none;
+    }
+  }
+}
+
+.antdcustomer-popconfirm-noicon {
+  .ant-popover-message > .anticon {
+    display: none;
+  }
+}
+.ant-input{
+  &.antdcustomer-input-width50{
+    width : 50px;
+  }
+  &.antdcustomer-input-width70{
+    width : 70px;
+  }
+  &.antdcustomer-input-width90{
+    width : 90px;
+  }
+}
+
+
+//special
+.in-table-add-product{
+  display: block;
+  //background-color: #94d8d6;
+  height: 30px;
+  //color: white;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+
+  position: absolute;
+  left: 25px;
+  bottom: 28px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #efefef;
+  color: #666;
+
+  .transition(all 0.15s ease-out);
+  &:hover{
+    color: #333;
+    border: 1px solid #999;
+  }
+  //&:hover{
+  //  background-color: #7acac7;
+  //  color:white;
+  //}
+}
+
+//file - img - upload
+.antd-img-uploader{
+  display: block;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  i{
+    font-size: 40px;
+    padding-top: 30px;
+    color: @ehsyBaseColor ;
+  }
+  .ant-upload{
+    width : 100%;
+    height : 100%;
+    .rc-upload{
+      width : 100%;
+      height : 100%;
+      .ehsy-image{
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+//excel
+.upload-excel{
+  .rc-upload{
+    button{
+      max-width: 150px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+//sortable style
+.sortable-ghost{
+  background-color: @ehsyBaseColorLight !important ;
+}
+.sortable-chosen{
+  background-color: @ehsyBaseColorLight !important;
+}
+.sortable-drag{
+  background-color: @ehsyBaseColorLight !important;
+}
+
+//color convert
+html{
+  //not base color
+  .root .ant-table th{
+    background: #f9f9f9;
+    color: #999;
+    font-weight: 300;
+  }
+  .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+    color: #333;
+    font-weight: 400;
+  }
+
+  .ant-table tr.ant-table-row-hover, .ant-table tr:hover{
+    background: #f5f5f5;
+  }
+
+  .ant-table-placeholder{
+    font-size: 20px;
+    color: #c7c7c7;
+  }
+
+  //baseColor
+  .ant-btn:active, .ant-btn.active{
+    color: @ehsyBaseColor;
+    border-color: @ehsyBaseColor;
+  }
+  .ant-btn:hover, .ant-btn:focus{
+    color: @ehsyBaseColor;
+    border-color: @ehsyBaseColor;
+  }
+  .ant-btn-primary{
+    color : #ffffff ;
+    background-color: @ehsyBaseColor;
+    border-color: @ehsyBaseColor;
+  }
+  .ant-btn-primary:active, .ant-btn-primary.active{
+    color : #ffffff ;
+    background-color: @ehsyBaseColorDark;
+    border-color: @ehsyBaseColorDark;
+  }
+  .ant-btn-primary:hover, .ant-btn-primary:focus{
+    color : #ffffff ;
+    background-color: @ehsyBaseColorDark;
+    border-color: @ehsyBaseColorDark;
+  }
+
+  .ant-select-open .ant-select-selection{
+    border-color: @ehsyBaseColor ;
+    box-shadow: @ehsyBorderShadow ;
+  }
+  .ant-input:focus {
+    border-color: @ehsyBaseColor ;
+    box-shadow: @ehsyBorderShadow ;
+  }
+  .ant-input:hover{
+    border-color: @ehsyBaseColor;
+  }
+  .ant-input-number:focus {
+    border-color: @ehsyBaseColor ;
+    box-shadow: @ehsyBorderShadow ;
+  }
+  .ant-input-number:hover{
+    border-color: @ehsyBaseColor;
+  }
+  .ant-input-number-focused{
+    box-shadow: @ehsyBorderShadow ;
+  }
+  .ant-select-selection:hover{
+    border-color: @ehsyBaseColor;
+  }
+  .ant-calendar-selected-day .ant-calendar-date{
+    background: @ehsyBaseColor;
+  }
+  .ant-calendar-date:hover{
+    background: @ehsyBaseColorLight;
+  }
+  .ant-checkbox-checked .ant-checkbox-inner{
+    border-color: @ehsyBaseColor;
+    background-color: @ehsyBaseColor;
+  }
+  .ant-select-dropdown-menu-item:hover, .ant-select-dropdown-menu-item-active{
+    background-color: @ehsyBaseColor;
+    color: #ffffff;
+  }
+  .ant-select-dropdown-menu-item-selected, .ant-select-dropdown-menu-item-selected:hover{
+
+  }
+  .ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active{
+    border-color: @ehsyBaseColor ;
+    box-shadow: @ehsyBorderShadow ;
+  }
+  .ant-transfer-checkbox-indeterminate .ant-transfer-checkbox-inner{
+    border-color: @ehsyBaseColor;
+    background-color: @ehsyBaseColor;
+  }
+  .ant-transfer-checkbox-indeterminate:hover .ant-transfer-checkbox-inner{
+    border-color: @ehsyBaseColor;
+  }
+  .ant-radio-button-wrapper-checked{
+    border-color: @ehsyBaseColor;
+    color: @ehsyBaseColor;
+    box-shadow: -1px 0 0 0 @ehsyBaseColor;
+  }
+  .ant-radio-button-wrapper-checked:hover {
+    border-color: @ehsyBaseColorDark;
+    box-shadow: -1px 0 0 0 @ehsyBaseColorDark;
+    color: #57c5f7;
+  }
+  .ant-radio-button-wrapper-checked:first-child{
+    border-color: @ehsyBaseColor;
+  }
+  .ant-radio-button-wrapper:hover, .ant-radio-button-wrapper-focused{
+    color: @ehsyBaseColor;
+  }
+}

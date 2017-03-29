@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta name="keywords" content="{{meta.keywords}}">
+    <meta name="description" content="{{meta.description}}">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link red="Shortcut Icon" href="{{@static_url}}/resource/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{{@static_url}}/resource/styles/sprite.css" />
+    <script>
+        window.version = {
+            middlewave : '1110_0.1.0'
+        } ;
+    </script>
+    {{{sections.head}}}
+
+</head>
+<body>
+
+{{{body}}}
+
+{{> _footer}}
+
+{{{sections.foot}}}
+
+</body>
+</html>

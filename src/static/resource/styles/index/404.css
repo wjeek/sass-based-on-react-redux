@@ -1,0 +1,21 @@
+.center .notFind-box {
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  width: 80%;
+  left: 50%;
+  margin-left: -40%;
+  background-color: #fffefd;
+}
+.center .notFind-box img {
+  height: 250px;
+  width: 300px;
+  display: block;
+  margin: 40px auto;
+}
+.center .notFind-box .returnButton {
+  text-align: center;
+}
+.center .notFind-box .returnButton .ant-btn {
+  margin-left: 20px;
+}

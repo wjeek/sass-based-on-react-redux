@@ -1,0 +1,690 @@
+/*销售 独有样式*/
+/*css namespace*/
+.market-namespace .header,
+.purchase-namespace .header,
+.account-namespace .header {
+  padding: 0px;
+}
+.market-namespace .header:after,
+.purchase-namespace .header:after,
+.account-namespace .header:after {
+  content: '';
+  height: 1px;
+  background: #dddddd;
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  bottom: 0px;
+}
+.market-namespace .nav-return-name,
+.purchase-namespace .nav-return-name,
+.account-namespace .nav-return-name {
+  font-size: 16px;
+  color: #00c3be;
+  cursor: pointer;
+  margin-left: 50px;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.market-namespace .nav-return-name:hover,
+.purchase-namespace .nav-return-name:hover,
+.account-namespace .nav-return-name:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.market-namespace .nav-return-name i,
+.purchase-namespace .nav-return-name i,
+.account-namespace .nav-return-name i {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-right: 15px;
+}
+.market-namespace .header-operation .operation,
+.purchase-namespace .header-operation .operation,
+.account-namespace .header-operation .operation {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.market-namespace .header-operation .save,
+.purchase-namespace .header-operation .save,
+.account-namespace .header-operation .save {
+  background-color: #00c3be;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #00c3be;
+  width: 120px;
+  right: 50px;
+}
+.market-namespace .header-operation .save:hover,
+.purchase-namespace .header-operation .save:hover,
+.account-namespace .header-operation .save:hover {
+  background-color: #09a276;
+  border: 1px solid #00c3be;
+}
+.market-namespace .header-operation .save-add,
+.purchase-namespace .header-operation .save-add,
+.account-namespace .header-operation .save-add {
+  border: 1px solid #ddd;
+  width: 120px;
+  border-radius: 5px;
+  right: 50px;
+  right: 190px;
+  background-color: #efefef;
+  color: #666;
+}
+.market-namespace .header-operation .save-add:hover,
+.purchase-namespace .header-operation .save-add:hover,
+.account-namespace .header-operation .save-add:hover {
+  color: #333;
+  border: 1px solid #999;
+}
+.market-namespace .header-operation .cancel,
+.purchase-namespace .header-operation .cancel,
+.account-namespace .header-operation .cancel {
+  border-radius: 0px 6px 6px 0px;
+  border: 1px solid #00c3be;
+  color: #00c3be;
+  width: 70px;
+}
+.market-namespace .header-operation .cancel:hover,
+.purchase-namespace .header-operation .cancel:hover,
+.account-namespace .header-operation .cancel:hover {
+  border: 1px solid #09a276;
+  color: #09a276;
+}
+.market-namespace .content .new,
+.purchase-namespace .content .new,
+.account-namespace .content .new {
+  position: absolute;
+  width: 40px;
+  margin-left: 15px;
+  color: #3396FF;
+  font-size: 12px;
+}
+.market-namespace .productlist-wrap,
+.purchase-namespace .productlist-wrap,
+.account-namespace .productlist-wrap {
+  padding-right: 50px;
+}
+.market-namespace .productlist-wrap .title,
+.purchase-namespace .productlist-wrap .title,
+.account-namespace .productlist-wrap .title {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.market-namespace .productlist-wrap .staticCount,
+.purchase-namespace .productlist-wrap .staticCount,
+.account-namespace .productlist-wrap .staticCount {
+  display: block;
+  padding-left: 8px;
+  height: 60px;
+  font-size: 12px;
+  text-align: right;
+  margin-top: 20px;
+}
+.market-namespace .productlist-wrap .staticCount .staticCount-title,
+.purchase-namespace .productlist-wrap .staticCount .staticCount-title,
+.account-namespace .productlist-wrap .staticCount .staticCount-title {
+  float: left;
+}
+.market-namespace .productlist-wrap .staticCount .sta-line .sta-value,
+.purchase-namespace .productlist-wrap .staticCount .sta-line .sta-value,
+.account-namespace .productlist-wrap .staticCount .sta-line .sta-value {
+  display: inline-block;
+  min-width: 90px;
+}
+.market-namespace .react-component-layer .header-title,
+.purchase-namespace .react-component-layer .header-title,
+.account-namespace .react-component-layer .header-title {
+  font-size: 18px;
+}
+.market-namespace .react-component-layer .layer-wrap,
+.purchase-namespace .react-component-layer .layer-wrap,
+.account-namespace .react-component-layer .layer-wrap {
+  box-shadow: 0px 0px 6px 4px #ddd;
+}
+.market-namespace .highlevel.react-component-layer,
+.purchase-namespace .highlevel.react-component-layer,
+.account-namespace .highlevel.react-component-layer {
+  z-index: 300;
+}
+.market-namespace .highlevel.react-component-layer .layer-mask,
+.purchase-namespace .highlevel.react-component-layer .layer-mask,
+.account-namespace .highlevel.react-component-layer .layer-mask {
+  background-color: rgba(255, 255, 255, 0);
+}
+.market-namespace .highlevel.react-component-layer .layer-wrap,
+.purchase-namespace .highlevel.react-component-layer .layer-wrap,
+.account-namespace .highlevel.react-component-layer .layer-wrap {
+  background: #ffffff;
+  overflow-y: auto;
+}
+.market-namespace .highlevel.react-component-layer .transpant-wrap,
+.purchase-namespace .highlevel.react-component-layer .transpant-wrap,
+.account-namespace .highlevel.react-component-layer .transpant-wrap {
+  width: 100%;
+  padding: 70px;
+  font-size: 12px;
+}
+.market-namespace .highlevel.react-component-layer .row1,
+.purchase-namespace .highlevel.react-component-layer .row1,
+.account-namespace .highlevel.react-component-layer .row1 {
+  height: 50px ;
+  line-height: 50px;
+  font-size: 14px;
+}
+.market-namespace .highlevel.react-component-layer .col1,
+.purchase-namespace .highlevel.react-component-layer .col1,
+.account-namespace .highlevel.react-component-layer .col1 {
+  text-align: left;
+}
+.market-namespace .highlevel.react-component-layer .col2 .input,
+.purchase-namespace .highlevel.react-component-layer .col2 .input,
+.account-namespace .highlevel.react-component-layer .col2 .input {
+  width: 300px;
+  margin-right: 10px;
+}
+.market-namespace .highlevel.react-component-layer .row3,
+.purchase-namespace .highlevel.react-component-layer .row3,
+.account-namespace .highlevel.react-component-layer .row3 {
+  margin-top: 10px;
+  height: 35px;
+  line-height: 30px;
+}
+.market-namespace .highlevel.react-component-layer .row3 .fontSize14,
+.purchase-namespace .highlevel.react-component-layer .row3 .fontSize14,
+.account-namespace .highlevel.react-component-layer .row3 .fontSize14 {
+  font-size: 14px;
+}
+.market-namespace .highlevel.react-component-layer .row4 .r-table,
+.purchase-namespace .highlevel.react-component-layer .row4 .r-table,
+.account-namespace .highlevel.react-component-layer .row4 .r-table {
+  background-color: #fff;
+}
+.market-namespace .highlevel.react-component-layer .row4 .r-table .row-header,
+.purchase-namespace .highlevel.react-component-layer .row4 .r-table .row-header,
+.account-namespace .highlevel.react-component-layer .row4 .r-table .row-header {
+  background-color: #f5fdf7;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: default;
+}
+.market-namespace .highlevel.react-component-layer .row4 .r-table .row-content,
+.purchase-namespace .highlevel.react-component-layer .row4 .r-table .row-content,
+.account-namespace .highlevel.react-component-layer .row4 .r-table .row-content {
+  cursor: pointer;
+}
+.market-namespace .highlevel.react-component-layer .row4 .line,
+.purchase-namespace .highlevel.react-component-layer .row4 .line,
+.account-namespace .highlevel.react-component-layer .row4 .line {
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #eeeeee;
+}
+.market-namespace .highlevel.react-component-layer .row4 .line .s1,
+.purchase-namespace .highlevel.react-component-layer .row4 .line .s1,
+.account-namespace .highlevel.react-component-layer .row4 .line .s1 {
+  display: inline-block;
+  width: 40%;
+}
+.market-namespace .highlevel.react-component-layer .row4 .line .s2,
+.purchase-namespace .highlevel.react-component-layer .row4 .line .s2,
+.account-namespace .highlevel.react-component-layer .row4 .line .s2 {
+  display: inline-block;
+  width: 30%;
+}
+.market-namespace .highlevel.react-component-layer .row4 .line .s3,
+.purchase-namespace .highlevel.react-component-layer .row4 .line .s3,
+.account-namespace .highlevel.react-component-layer .row4 .line .s3 {
+  display: inline-block;
+  width: 30%;
+}
+.market-namespace .highlevel.react-component-layer .row5,
+.purchase-namespace .highlevel.react-component-layer .row5,
+.account-namespace .highlevel.react-component-layer .row5 {
+  margin-top: 20px;
+  height: 30px ;
+  line-height: 30px;
+}
+.market-namespace .highlevel.react-component-layer .row5 .blue,
+.purchase-namespace .highlevel.react-component-layer .row5 .blue,
+.account-namespace .highlevel.react-component-layer .row5 .blue {
+  cursor: pointer;
+}
+.market-namespace .highlevel.react-component-layer .row6,
+.purchase-namespace .highlevel.react-component-layer .row6,
+.account-namespace .highlevel.react-component-layer .row6 {
+  display: none;
+}
+.market-namespace .highlevel.react-component-layer .row6 .input,
+.purchase-namespace .highlevel.react-component-layer .row6 .input,
+.account-namespace .highlevel.react-component-layer .row6 .input {
+  width: 100%;
+}
+.market-namespace .highlevel.react-component-layer .row6.show,
+.purchase-namespace .highlevel.react-component-layer .row6.show,
+.account-namespace .highlevel.react-component-layer .row6.show {
+  display: block;
+}
+.market-namespace .highlevel.react-component-layer .row7,
+.purchase-namespace .highlevel.react-component-layer .row7,
+.account-namespace .highlevel.react-component-layer .row7 {
+  text-align: right;
+}
+.market-namespace .highlevel.react-component-layer .row7 .btn-submit,
+.purchase-namespace .highlevel.react-component-layer .row7 .btn-submit,
+.account-namespace .highlevel.react-component-layer .row7 .btn-submit {
+  margin-top: 30px;
+  height: 38px;
+  width: 100px;
+  background-color: #00c3be;
+  color: #ffffff;
+  cursor: pointer;
+}
+.market-namespace .highlevel.react-component-layer .row7 .ant-btn-ghost,
+.purchase-namespace .highlevel.react-component-layer .row7 .ant-btn-ghost,
+.account-namespace .highlevel.react-component-layer .row7 .ant-btn-ghost {
+  color: #666;
+  background-color: transparent;
+  border-color: #d9d9d9;
+}
+.market-namespace .shadeForClick,
+.purchase-namespace .shadeForClick,
+.account-namespace .shadeForClick {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0;
+  filter: alpha(opacity=40);
+}
+.market-namespace .marketDetail .header:after,
+.purchase-namespace .marketDetail .header:after,
+.account-namespace .marketDetail .header:after {
+  height: 0px;
+}
+.market-namespace .marketDetail .h3,
+.purchase-namespace .marketDetail .h3,
+.account-namespace .marketDetail .h3 {
+  font-weight: normal;
+  font-size: 18px;
+  padding-top: 15px;
+  display: block;
+  line-height: 36px;
+}
+.market-namespace .marketDetail .h-span,
+.purchase-namespace .marketDetail .h-span,
+.account-namespace .marketDetail .h-span {
+  line-height: 28px;
+  white-space: nowrap;
+}
+.market-namespace .marketDetail .h-span-2,
+.purchase-namespace .marketDetail .h-span-2,
+.account-namespace .marketDetail .h-span-2 {
+  line-height: 30px;
+  white-space: nowrap;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.market-namespace .marketDetail .span-third-in-one,
+.purchase-namespace .marketDetail .span-third-in-one,
+.account-namespace .marketDetail .span-third-in-one {
+  display: inline-block;
+  width: 26%;
+  margin-right: 2%;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.market-namespace .marketDetail .span-third-in-one .h-label,
+.purchase-namespace .marketDetail .span-third-in-one .h-label,
+.account-namespace .marketDetail .span-third-in-one .h-label {
+  display: inline-block;
+  min-width: 56px;
+  text-align: justify;
+  text-align: end;
+  text-align-last: justify;
+  text-justify: distribute;
+}
+.market-namespace .marketDetail .span-third-in-one .h-dot,
+.purchase-namespace .marketDetail .span-third-in-one .h-dot,
+.account-namespace .marketDetail .span-third-in-one .h-dot {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.market-namespace .marketDetail .span-third-in-one .h-info,
+.purchase-namespace .marketDetail .span-third-in-one .h-info,
+.account-namespace .marketDetail .span-third-in-one .h-info {
+  display: inline-block;
+}
+.market-namespace .marketDetail .header,
+.purchase-namespace .marketDetail .header,
+.account-namespace .marketDetail .header {
+  height: 300px;
+  line-height: 1;
+  position: relative;
+  z-index: 100;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.market-namespace .marketDetail .header .nav-return-name,
+.purchase-namespace .marketDetail .header .nav-return-name,
+.account-namespace .marketDetail .header .nav-return-name {
+  font-size: 16px;
+  color: #00c3be;
+  cursor: pointer;
+  margin-left: 50px;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.market-namespace .marketDetail .header .nav-return-name:hover,
+.purchase-namespace .marketDetail .header .nav-return-name:hover,
+.account-namespace .marketDetail .header .nav-return-name:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.market-namespace .marketDetail .header .nav-return-name i,
+.purchase-namespace .marketDetail .header .nav-return-name i,
+.account-namespace .marketDetail .header .nav-return-name i {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-right: 15px;
+}
+.market-namespace .marketDetail .header-west,
+.purchase-namespace .marketDetail .header-west,
+.account-namespace .marketDetail .header-west {
+  height: 200px;
+  display: block;
+  background: #f7f7f7;
+  padding-left: 50px;
+}
+.market-namespace .marketDetail .header-east,
+.purchase-namespace .marketDetail .header-east,
+.account-namespace .marketDetail .header-east {
+  display: block;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+.market-namespace .marketDetail .header-east .edit,
+.purchase-namespace .marketDetail .header-east .edit,
+.account-namespace .marketDetail .header-east .edit {
+  border: 1px solid #ddd;
+  background-color: #efefef;
+  color: #666;
+  width: 100px;
+  height: 36px;
+  display: inline-block;
+  border-radius: 7px;
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.market-namespace .marketDetail .header-east .edit:hover,
+.purchase-namespace .marketDetail .header-east .edit:hover,
+.account-namespace .marketDetail .header-east .edit:hover {
+  color: #333;
+  border: 1px solid #999;
+}
+.market-namespace .marketDetail .header-east .sprite-label_已撤销,
+.purchase-namespace .marketDetail .header-east .sprite-label_已撤销,
+.account-namespace .marketDetail .header-east .sprite-label_已撤销 {
+  display: inline-block;
+  margin-left: 50px;
+}
+.market-namespace .marketDetail .header-north,
+.purchase-namespace .marketDetail .header-north,
+.account-namespace .marketDetail .header-north {
+  padding-top: 17px;
+  padding-bottom: 13px;
+}
+.market-namespace .marketDetail .left-irow,
+.purchase-namespace .marketDetail .left-irow,
+.account-namespace .marketDetail .left-irow {
+  border: 1px solid #00c3be;
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 22px;
+  color: #999;
+  position: absolute;
+  top: 20px;
+}
+.market-namespace .marketDetail .left-irow.revoke,
+.purchase-namespace .marketDetail .left-irow.revoke,
+.account-namespace .marketDetail .left-irow.revoke {
+  right: 80px;
+}
+.market-namespace .marketDetail .down-irow,
+.purchase-namespace .marketDetail .down-irow,
+.account-namespace .marketDetail .down-irow {
+  border: 1px solid #00c3be;
+  width: 60px;
+  height: 36px;
+  border-radius: 0px 3px 3px 0px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  color: #999;
+  line-height: 36px;
+  text-align: center;
+}
+.market-namespace .marketDetail .down-irow:hover,
+.purchase-namespace .marketDetail .down-irow:hover,
+.account-namespace .marketDetail .down-irow:hover {
+  border-bottom: 0px;
+  border-radius: 0px 3px 0px 0px;
+}
+.market-namespace .marketDetail .down-irow:hover .drop-list,
+.purchase-namespace .marketDetail .down-irow:hover .drop-list,
+.account-namespace .marketDetail .down-irow:hover .drop-list {
+  display: block;
+}
+.market-namespace .marketDetail .down-irow .drop-list,
+.purchase-namespace .marketDetail .down-irow .drop-list,
+.account-namespace .marketDetail .down-irow .drop-list {
+  position: absolute;
+  display: none;
+  border-left: 1px solid #00c3be;
+  border-right: 1px solid #00c3be;
+  border-bottom: 1px solid #00c3be;
+  top: 35px;
+  left: -1px;
+  border-radius: 0px 0px 3px 3px;
+}
+.market-namespace .marketDetail .down-irow .drop-list .drop-line,
+.purchase-namespace .marketDetail .down-irow .drop-list .drop-line,
+.account-namespace .marketDetail .down-irow .drop-list .drop-line {
+  width: 58px;
+  height: 30px;
+  background-color: #ffffff;
+  color: #999999;
+}
+.market-namespace .marketDetail .down-irow .drop-list .drop-line:hover,
+.purchase-namespace .marketDetail .down-irow .drop-list .drop-line:hover,
+.account-namespace .marketDetail .down-irow .drop-list .drop-line:hover {
+  color: #00c3be;
+  background-color: #eeeeee;
+}
+.market-namespace .marketDetail .content-wrap,
+.purchase-namespace .marketDetail .content-wrap,
+.account-namespace .marketDetail .content-wrap {
+  top: 300px;
+  padding-top: 0px;
+  padding-left: 50px;
+}
+.market-namespace .marketDetail .content-wrap .sprite-label_已撤销,
+.purchase-namespace .marketDetail .content-wrap .sprite-label_已撤销,
+.account-namespace .marketDetail .content-wrap .sprite-label_已撤销 {
+  position: absolute;
+  right: 5px;
+}
+.market-namespace .marketDetail .content-wrap .content,
+.purchase-namespace .marketDetail .content-wrap .content,
+.account-namespace .marketDetail .content-wrap .content {
+  position: relative;
+  padding-top: 40px;
+}
+.market-namespace .marketDetail .content-wrap .content .customer-form-image,
+.purchase-namespace .marketDetail .content-wrap .content .customer-form-image,
+.account-namespace .marketDetail .content-wrap .content .customer-form-image {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 40px;
+  right: 50px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+}
+.market-namespace .marketDetail .content-wrap .content .customer-form-image img,
+.purchase-namespace .marketDetail .content-wrap .content .customer-form-image img,
+.account-namespace .marketDetail .content-wrap .content .customer-form-image img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+}
+.market-namespace .marketDetail .form-static .view-detail,
+.purchase-namespace .marketDetail .form-static .view-detail,
+.account-namespace .marketDetail .form-static .view-detail {
+  font-size: 12px;
+  color: #3396FF;
+  margin-left: 50px;
+  position: relative;
+}
+.market-namespace .marketDetail .form-static .view-detail:hover .detail-wrap,
+.purchase-namespace .marketDetail .form-static .view-detail:hover .detail-wrap,
+.account-namespace .marketDetail .form-static .view-detail:hover .detail-wrap {
+  display: block;
+}
+.market-namespace .marketDetail .detail-wrap,
+.purchase-namespace .marketDetail .detail-wrap,
+.account-namespace .marketDetail .detail-wrap {
+  display: none;
+  position: absolute;
+  line-height: 20px;
+  width: 360px;
+  min-height: 57px;
+  border: 1px solid #00c3be;
+  top: -50px;
+  left: 80px;
+  padding-left: 25px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  background-color: white;
+  border-radius: 4px;
+  color: #aaaaaa;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+}
+.market-namespace .marketDetail .detail-wrap .span-1,
+.purchase-namespace .marketDetail .detail-wrap .span-1,
+.account-namespace .marketDetail .detail-wrap .span-1,
+.market-namespace .marketDetail .detail-wrap .span-3,
+.purchase-namespace .marketDetail .detail-wrap .span-3,
+.account-namespace .marketDetail .detail-wrap .span-3 {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+.market-namespace .marketDetail .detail-wrap .span-1:before,
+.purchase-namespace .marketDetail .detail-wrap .span-1:before,
+.account-namespace .marketDetail .detail-wrap .span-1:before,
+.market-namespace .marketDetail .detail-wrap .span-3:before,
+.purchase-namespace .marketDetail .detail-wrap .span-3:before,
+.account-namespace .marketDetail .detail-wrap .span-3:before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #aaaaaa;
+  position: absolute;
+  left: -13px;
+  top: 7px;
+}
+.market-namespace .marketDetail .detail-wrap .span-v,
+.purchase-namespace .marketDetail .detail-wrap .span-v,
+.account-namespace .marketDetail .detail-wrap .span-v {
+  margin-left: 4px;
+  margin-right: 15px;
+}
+.market-namespace .marketDetail .ant-form-item,
+.purchase-namespace .marketDetail .ant-form-item,
+.account-namespace .marketDetail .ant-form-item {
+  margin-bottom: 0px;
+}
+.market-namespace .marketDetail .ant-form-item-control .detail-wrap .span-2,
+.purchase-namespace .marketDetail .ant-form-item-control .detail-wrap .span-2,
+.account-namespace .marketDetail .ant-form-item-control .detail-wrap .span-2,
+.market-namespace .marketDetail .ant-form-item-control .detail-wrap .span-4,
+.purchase-namespace .marketDetail .ant-form-item-control .detail-wrap .span-4,
+.account-namespace .marketDetail .ant-form-item-control .detail-wrap .span-4 {
+  line-height: 0px;
+}
+.market-namespace .layer-wrap .content form .ant-input-number,
+.purchase-namespace .layer-wrap .content form .ant-input-number,
+.account-namespace .layer-wrap .content form .ant-input-number {
+  width: 100% ;
+}
+.market-namespace .layer-wrap .content .ant-calendar-picker,
+.purchase-namespace .layer-wrap .content .ant-calendar-picker,
+.account-namespace .layer-wrap .content .ant-calendar-picker {
+  width: 100% ;
+}
+.market-namespace .layer-wrap .content .ant-form-item-label,
+.purchase-namespace .layer-wrap .content .ant-form-item-label,
+.account-namespace .layer-wrap .content .ant-form-item-label {
+  text-align: left;
+}
+.market-namespace .no-object-to-select,
+.purchase-namespace .no-object-to-select,
+.account-namespace .no-object-to-select {
+  margin-top: 20px;
+  display: block;
+  color: #999;
+}
+/*全局modal*/
+.market-modal1 .ant-modal-footer {
+  display: none;
+}
+.market-modal1 .save-submit {
+  width: 100%;
+}

@@ -1,0 +1,243 @@
+//
+//@borderColor-dash : #333333;
+//
+//
+//.react-component-filter{
+//  .filter-area{
+//    border-bottom: 1px dashed @borderColor-dash;
+//    .filter-wrap{
+//      margin-right: 20px;
+//      display: inline-block;
+//      margin-bottom: 10px;
+//    }
+//  }
+//  .filter-submit{
+//    height:30px ;
+//    margin-top: 15px;
+//    margin-bottom: 15px;
+//    text-align: center;
+//  }
+//}
+//
+//
+///*select*/
+//@selectHeight: 30px ;
+//.react-component-select{
+//  display: inline-block;
+//  position: relative;
+//  height: @selectHeight ;
+//  color: @fontColor-light ;
+//  border: 1px solid @borderColor ;
+//  min-width: 120px;
+//  .select-wrap{
+//    display: inline-block;
+//    height: @selectHeight - 2 ;
+//    line-height: @selectHeight - 2 ;
+//    padding-left: 5px ;
+//    cursor: pointer ;
+//    width: 100%;
+//    .select{
+//
+//    }
+//    .select-state{
+//
+//    }
+//  }
+//  .select-wrap.show{
+//    .select-state{
+//
+//    }
+//  }
+//  .option-wrap{
+//    position: absolute;
+//    border: 1px solid @borderColor-dark ;
+//    display: none;
+//    width: 100%;
+//    background-color: @backgroundColor;
+//    z-index: 100;
+//    .option{
+//      height: @selectHeight ;
+//      line-height: @selectHeight ;
+//      padding-left: 5px ;
+//      padding-right: 5px ;
+//      cursor: pointer;
+//      &:hover{
+//        color: @fontHoverColor;
+//      }
+//    }
+//    .option.selected{
+//      background-color: @baseBackgroundcolor;
+//      color: @fontColor-white;
+//    }
+//  }
+//  .option-wrap.show{
+//    display: block;
+//  }
+//}
+//
+//
+///*ReactInput Style*/
+//.react-component-input{
+//  display: inline-block;
+//  position: relative;
+//  height: @selectHeight ;
+//  line-height: @selectHeight ;
+//  color: @fontColor-light ;
+//  border: 1px solid @borderColor ;
+//  .input{
+//    padding-left: 5px ;
+//    padding-right: 5px ;
+//    width: 100%;
+//  }
+//}
+//.react-component-input.pageSubmit{
+//  width: 50px;
+//  margin-left: 10px;
+//  margin-right: 10px;
+//}
+//
+///*ReactText Style*/
+//.react-component-text{
+//  display: inline-block;
+//  height: @selectHeight;
+//  line-height: @selectHeight;
+//}
+//
+///*ReactDatepicker*/
+//.react-component-datepicker{
+//  display: inline-block;
+//  position: relative;
+//  padding-left: 5px;
+//  height: @selectHeight;
+//  line-height: @selectHeight;
+//  border: 1px solid @borderColor;
+//}
+//
+//
+//
+///*ReactButton*/
+//@buttonBackgroudcolor : @baseBackgroundcolor ;
+//
+//.react-component-button{
+//  background-color: @buttonBackgroudcolor;
+//  color: @fontColor-white;
+//  border-radius: 3px;
+//  cursor: pointer;
+//  display: inline-block;
+//  height: @selectHeight;
+//  line-height: @selectHeight;
+//  padding-left: 20px;
+//  padding-right: 20px;
+//  margin-left: 20px;
+//  i{
+//    display: inline-block;
+//    vertical-align: sub;
+//  }
+//  span{
+//    display: inline-block;
+//    color: @fontColor-white;
+//    padding-left: 5px;
+//  }
+//}
+//.react-component-button.lighter{
+//  background-color: @backgroundColor;
+//  border: 1px solid @buttonBackgroudcolor;
+//  span{
+//    color: @fontColor;
+//  }
+//}
+//
+//
+///*ReactPagenation*/
+//.react-component-pagenation{
+//  height: 30px;
+//  margin-top: 20px;
+//  padding-right: 10px;
+//
+//  .right-page{
+//    float: right;
+//    height: 30px;
+//  }
+//
+//  .pages{
+//    height: 30px;
+//    margin-left: 20px;
+//    display: inline-block;
+//  }
+//  .pages-total,.pages-go{
+//    display: inline-block;
+//    height: 30px;
+//    line-height: 30px;
+//    margin-left: 20px;
+//    .confirm{
+//      display: inline-block;
+//      width: 60px;
+//      height: 30px;
+//      border: 1px solid @borderColor;
+//      margin-left: 10px;
+//      cursor: pointer;
+//      line-height: 30px;
+//      text-align: center;
+//    }
+//  }
+//
+//  .r-page{
+//    display: inline-block;
+//    width: 30px;
+//    height: 30px;
+//    line-height: 30px;
+//    text-align: center;
+//    border-radius: 2px;
+//    margin-left: 10px;
+//    border:1px solid @borderColor
+//  }
+//  .r-page.current{
+//    color: @backgroundColor ;
+//    background-color: @baseBackgroundcolor;
+//    border-color: @baseBackgroundcolor;
+//  }
+//  .r-page.disable{
+//    color: @borderColor;
+//    background-color: @backgroundColor-light ;
+//  }
+//}
+//
+//
+///*ReactTable*/
+//.react-component-table{
+//  display: block;
+//  position: relative;
+//  width: 100%;
+//  overflow-x: scroll;
+//  .public_fixedDataTable_main{
+//    margin: 0 auto;
+//    border: none ;
+//    font-size: 12px;
+//  }
+//  .public_fixedDataTable_header{
+//    background-color: @tableHeaderBackgroundcolor;
+//    font-size: 14px;
+//  }
+//  .fixedDataTableCellLayout_main{
+//    border-right-style: none;
+//  }
+//  .public_fixedDataTableCell_cellContent{
+//    padding: 6px;
+//    line-height: 1.7;
+//  }
+//  .fixedDataTableLayout_header{
+//    border-bottom-style: none;
+//  }
+//  .fixedDataTableRowLayout_rowWrapper , .fixedDataTableLayout_hasBottomBorder{
+//    border-bottom-style: solid;
+//    border-bottom-width: 1px;
+//    border-bottom-color: @tableBodyerBordercolor;
+//  }
+//  //style
+//  .blueCell{
+//    color: @tableBlueCell;
+//  }
+//  .redCell{
+//    color: @tableRedCell;
+//  }
+//}

@@ -1,0 +1,13 @@
+before_script:
+ - mkdir -p /home/jetty/gitlab-cache/saas-web-tmp2/node_modules/
+ - cp -R /home/jetty/gitlab-cache/saas-web-tmp2/node_modules ./
+ - npm install
+
+after_script:
+ - cp -R ./node_modules /home/jetty/gitlab-cache/saas-web-tmp2/
+
+build_deploy:
+  script:
+   - gulp build --webpackenv production
+   - rsync -az --delete ./ 10.128.200.5:/home/jetty/saas-web
+   - ssh 10.128.200.5 'cd saas-web && pm2 restart process.json --env=dev'

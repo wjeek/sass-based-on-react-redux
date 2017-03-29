@@ -1,0 +1,43 @@
+.registerBox{
+    width:280px;
+    height:70%;
+    position:absolute;
+    top:10%;
+    left:50%;
+    margin-left: -140px;
+}
+.phone{
+    border:1px solid #d9d9d9;
+    border-radius:6px;
+}
+.getcode{
+    width:35%;
+    float: right;
+    border-left: 1px solid #d9d9d9;
+    height:50px;
+}
+.code-info{
+    display: block;
+    margin-top: 5px;
+    width:112px;
+}
+.btn_submit{
+    width:280px;
+    height:50px;
+    margin-top: 15px;
+    border:1px solid #d9d9d9;
+}
+.tips{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #2fcaff;
+}
+.info{
+    color:#2fcaff;
+}
+.jumpLogin{
+    display: block;
+    float: right;
+    margin-top: 35px;
+}

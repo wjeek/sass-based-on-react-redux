@@ -1,0 +1,299 @@
+//frame style and common
+@import "common.less";
+@import "../sprite.css";
+
+.header .pwd{
+  display:none;
+}
+.header .login{
+  display: none;
+}
+.header .team{
+  display: none;
+}
+#findpwd-entry .header .register{
+  display: none;
+}
+#findpwd-entry .header .pwd{
+  display: block;
+}
+#findpwd-entry .header .team{
+  display:none;
+}
+.body {
+  .body-content {
+    background: #FFFFFF;
+    width: 75%;
+    height: 88%;
+    min-width: 1200px;
+    min-height: 470px;
+    margin: auto auto;
+    position: relative;
+    top: 28px;
+    bottom: 11px;
+    .body-content-wrap{
+      .Contents {
+        display:none;
+        width:300px;
+        position:absolute;
+        left:50%;
+        margin-left:-150px;
+        &.content-show{
+          display:block;
+        }
+        &.findPwd{
+          display:block;
+        }
+        .info {
+          color: #6795d9;
+        }
+        .example {
+          position: relative;
+          padding-top: 15px;
+          &.agree{
+            padding-top: 38px;
+          }
+          &.submit-2{
+            margin-top: 27px;
+          }
+          input[type="checkbox"]{
+            -webkit-appearance: none;
+            margin-right: 4px;
+            margin-bottom: -2px;
+          }
+          .ant-input {
+            height: 50px;
+            padding-bottom: 8px;
+            font-size: 14px;
+            margin-top: 22px;
+          }
+          .ant-input-lg{
+            padding: 6px 25px;
+          }
+          i.sprite-ico_phone_s{
+            position: absolute;
+            top: 53px;
+            left: 5px;
+          }
+          i.sprite-ico_captcha_s{
+            position: absolute;
+            left: 5px;
+            top: 53px;
+          }
+          i.sprite-ico_pwd_s{
+            position: absolute;
+            left: 5px;
+            top: 53px;
+          }
+          .number {
+            width: 300px;
+            .i{
+              display: block;
+            }
+          }
+          .code {
+            width: 160px;
+          }
+          .getcode {
+            width: 130px;
+            height: 50px;
+            margin-left: 10px;
+          }
+
+          .info.code-info {
+            margin-top: 5px;
+            display: block;
+          }
+          .btn_submit {
+            width: 300px;
+            height: 50px;
+            &.findPass{
+              margin-top: 20px;
+            }
+          }
+          .mobileMsg{
+            position: absolute;
+            top:87px;
+            left: 0px;
+            color: red;
+          }
+          .mobileMsg1{
+            position: absolute;
+            top:110px;
+            left: 0px;
+            color: red;
+          }
+        }
+        .viplogin {
+          float: right;
+          display:block;
+          /*margin-right: 50px;*/
+          margin-top: 20px;
+          .info {
+            display: block;
+            color: #6795d9;
+          }
+        }
+      }
+      .successContent {
+        .mobileMsg{
+          position: absolute;
+          top:101px;
+          left:45px;
+          color:red;
+        }
+        .mobileMsg1{
+          position: absolute;
+          top:163px;
+          left:45px;
+          color:red;
+        }
+        .content-step3{
+          display: none;
+          &.content-show{
+            display:block;
+          }
+          .joinTeam{
+            //display:none;
+          }
+          i.sprite-ico_warn_s {
+            display: inline-block;
+            position: relative;
+            left: 471px;
+            top: -32px;
+          }
+          .join-team{
+            //display:none;
+          }
+        }
+        .message-wrap {
+          span.success {
+            margin-top: 72px;
+            display: inline-block;
+            margin-left: 450px;
+            font-size: 22px;
+          }
+          i.sprite-ico_right_b {
+            display: inline-block;
+            position: relative;
+            left: 425px;
+            top: 24px;
+          }
+        }
+
+        .ant-alert.ant-alert-no-icon{
+          width: 820px;
+          height: 30px;
+          margin-left: 200px;
+          margin-top: 42px;
+          .ant-alert-message{
+            margin-left: 276px;
+          }
+        }
+        .ant-col-8{
+          padding-left: 45px;
+          height: 210px;
+          border: solid 1px grey;
+          margin-right: 20px;
+          /*margin-top: 20px;*/
+          span.join{
+            display: block;
+            margin-top: 20px;
+            font-size: 14px;
+          }
+          .ant-input {
+            width: 300px;
+            height: 40px;
+            padding-bottom: 8px;
+            font-size: 14px;
+            margin-top: 20px;
+          }
+          span.hasInfo,span.hasnotInfo{
+            margin-top: 24px;
+            display: block;
+            color:#03d6d1;
+            cursor: pointer;
+            width:70px;
+          }
+          .horizontal{
+            height: 1px;
+            width: 325px;
+            margin-top: 20px;
+            background-color: #dcdcdc;
+          }
+          .character{
+            margin-top: 30px;
+          }
+        }
+        .ant-btn{
+          margin-left: 539px;
+          margin-top: 20px;
+          width: 140px;
+        }
+      }
+      .MessageContent{
+        display: none;
+        .Horizontal-line{
+          height: 2px;
+          width: 900px;
+          display: block;
+          /* margin-top: 20px; */
+          top: 80px;
+          margin-left: 129px;
+          position: absolute;
+          background-color: #dcdcdc;
+        }
+        .joinText1{
+          display: block;
+          position: absolute;
+          top: 185px;
+          margin-left: 530px;
+        }
+        button{
+          display: block;
+          position: absolute;
+          top: 290px;
+          margin-left: 548px;
+          width: 120px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}
+
+#register-entry .ant-modal-content{
+  width: 800px;
+  margin-left: -220px;
+}
+#register-entry .ant-confirm-title{
+  color: red !important;
+}
+
+.create-team{
+  display: none;
+}
+
+.tips{
+  .ant-modal-header{
+    background-color: #e3e4ed;
+  }
+  .ant-modal-body{
+    .tipTitle{
+      color:red;
+      font-size: 18px;
+    }
+    .reminder {
+      margin: 10px 40px 10px 40px;
+    }
+  }
+}
+
+.tipbut {
+  background-color: #57c5f7 !important;
+  margin-top: 10px;
+  margin-bottom: 10px !important;
+  span{
+    color: white;
+  }
+}

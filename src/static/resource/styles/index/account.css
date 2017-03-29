@@ -1,0 +1,14 @@
+/*账款 独有样式*/
+.account-user-modal1 .ant-table th,
+.account-user-modal2 .ant-table th,
+.account-user-modal1 .ant-table td,
+.account-user-modal2 .ant-table td {
+  padding: 0px 5px;
+}
+.red-send {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #ff0000;
+}

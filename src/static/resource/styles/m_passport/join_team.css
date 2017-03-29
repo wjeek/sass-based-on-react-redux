@@ -1,0 +1,46 @@
+.joinImg{
+    display: block;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    height: 90px;
+}
+.joinPart{
+    width:100%;
+    height:100%;
+}
+.joinText{
+    width:100%;
+    height:100%;
+}
+.joinText1,.joinText2,.joinText3{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.joinText1{
+    margin-top: 40px;
+    color: #2fcaff;
+    font-family: "楷体","楷体_GB2312";
+    font-size: 23px;
+}
+.joinText2{
+    margin-top: 20px;
+    top: 35%;
+    color: #333;
+}
+.joinText3{
+    margin-top: 5px;
+    top: 40%;
+    color: #999;
+}
+.joinButton{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    height: 50px;
+    /*border-radius:6px;*/
+}

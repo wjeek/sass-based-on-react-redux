@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta name="keywords" content="{{meta.keywords}}">
+    <meta name="description" content="{{meta.description}}">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link red="Shortcut Icon" href="{{@static_url}}/resource/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{{@static_url}}/resource/styles/sprite.css" />
+    <link type="text/css" rel="stylesheet" href="{{@static_url}}/resource/styles/m_passport/m_common.css" />
+    <link type="text/css" rel="stylesheet" href="{{@static_url}}/resource/styles/m_passport/m_position.css" />
+</head>
+<body>
+<div class="Contents">
+    <div class="positionBox">
+        <div class="inputArea phone">
+            <input placeholder="公司" class="company text" value="西域机电有限公司" disabled="disabled"/>
+        </div>
+        <div class="inputArea userName">
+            <input placeholder="姓名" class="name text" />
+            <i class="sprite-h5_delete"></i>
+        </div>
+        <span class="info position-info">选择职务</span>
+        <div class="jobBox"><input class="jobCheck" type="radio" name="position" value="1" id="boss" checked><label for="boss" class="radio">我是老板</label></div>
+        <div class="jobBox1"><input class="jobCheck" type="radio" name="position" value="4" id="purchase"><label for="purchase" class="radio">我是采购</label></div>
+        <div class="jobBox"><input class="jobCheck" type="radio" name="position" value="2" id="position"><label for="position" class="radio">我是财务</label></div>
+        <div class="jobBox1"><input class="jobCheck" type="radio" name="position" value="3" id="sale"><label for="sale" class="radio">我是销售</label></div>
+        <div class="inputArea submit">
+            <button class="btn_submit common-submit">提交</button>
+        </div>
+    </div>
+</div>
+<div class="errorTips"><span class="tipsContent"></span></div>
+<script src="{{@static_url}}/libs/jquery/jquery-2.1.4.js"></script>
+<script src="{{@static_url}}/scripts/m_common.js"></script>
+<script src="{{@static_url}}/scripts/m_position.js"></script>
+</body>
+</html>
+
+

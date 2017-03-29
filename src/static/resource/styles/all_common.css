@@ -1,0 +1,451 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, "sans-serif";
+  font-size: 14px;
+  color: #333333;
+  height: 100%;
+  width: 100%;
+  min-width: 1140px;
+  min-height: 600px;
+}
+html body {
+  height: 100%;
+  width: 100%;
+  min-width: 1140px;
+  min-height: 600px;
+  position: relative;
+  font-size: inherit;
+}
+html a {
+  text-decoration: blink;
+  color: #333333;
+  cursor: pointer;
+  font-size: 14px;
+}
+html a:hover {
+  color: #00c3be;
+}
+html table {
+  border-collapse: collapse;
+}
+li,
+ol {
+  list-style: none;
+}
+input:focus {
+  outline: none ;
+}
+.red {
+  color: #FF5E5E;
+}
+.red-mark {
+  color: #FF5E5E;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+}
+.blue {
+  color: #0066cc;
+}
+.dib {
+  display: inline-block;
+}
+.dib-table-icon {
+  margin-right: 18px;
+  cursor: pointer;
+  display: inline-block;
+}
+.dib-table-icon.sprite-delete {
+  margin-top: 0px;
+}
+.dib-table-icon.sprite-view {
+  margin-top: 2px;
+}
+.dib-table-icon.sprite-edit {
+  margin-top: 0px;
+}
+.root {
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  background-color: #f3f3f3;
+  width: 100%;
+  min-width: 1140px;
+}
+.footer {
+  display: none;
+  height: 50px;
+  position: absolute;
+  bottom: 0 ;
+  width: 100%;
+  background: #ffffff;
+}
+.footer .tabs {
+  color: #aaaaaa;
+  padding-top: 18px;
+}
+.footer .tabs li {
+  display: inline-block;
+  font-size: 12px;
+  color: #aaaaaa;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.footer .tabs .vertical {
+  width: 1px;
+  height: 12px;
+  background-color: #cccccc;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.footer .beian {
+  color: #aaaaaa;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 12px;
+}
+/*react component*/
+.react-component-layer.show {
+  left: 0%;
+}
+.react-component-layer.show .layer-mask {
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.react-component-layer {
+  display: block;
+  z-index: 200;
+  position: fixed;
+  -webkit-transition: left 0.8s cubic-bezier(0.67, 0, 0.15, 1);
+  -moz-transition: left 0.8s cubic-bezier(0.67, 0, 0.15, 1);
+  -o-transition: left 0.8s cubic-bezier(0.67, 0, 0.15, 1);
+  transition: left 0.8s cubic-bezier(0.67, 0, 0.15, 1);
+  width: 100%;
+  left: 100%;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.react-component-layer .layer-mask {
+  -webkit-transition: opacity 0.35s ease-out 0.8s;
+  -moz-transition: opacity 0.35s ease-out 0.8s;
+  -o-transition: opacity 0.35s ease-out 0.8s;
+  transition: opacity 0.35s ease-out 0.8s;
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.react-component-layer .layer-wrap {
+  height: 100%;
+  width: 60%;
+  float: right;
+  background-color: #ffffff;
+  position: relative;
+}
+.react-component-layer .layer-wrap .header {
+  height: 120px;
+  line-height: 120px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: #ffffff;
+  position: relative;
+}
+.react-component-layer .layer-wrap .header:after {
+  content: '';
+  height: 1px;
+  background: #dddddd;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 0px;
+}
+.react-component-layer .layer-wrap .header .header-operation {
+  float: right;
+  /*销售market style*/
+}
+.react-component-layer .layer-wrap .header .header-operation .operation {
+  display: inline-block;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.react-component-layer .layer-wrap .content-wrap {
+  position: absolute;
+  top: 120px;
+  bottom: 0px;
+  overflow-y: auto;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+}
+.react-component-layer .layer-wrap .content-wrap .content-name {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+/*ant design theme reset*/
+.root .ant-pagination-item-active {
+  background-color: #00c3be;
+  border-color: #00c3be;
+}
+.root .ant-btn-primary {
+  background-color: #00c3be;
+  border-color: #00c3be;
+}
+.root .ant-table th {
+  background-color: #f5fdf7;
+  padding: 10px 8px;
+}
+.root .ant-table td {
+  font-size: 12px;
+}
+.root .ant-table td a {
+  font-size: 12px;
+}
+.root .ant-table td .cell-link {
+  color: #0066cc;
+}
+.root .ant-table td .cell-notice {
+  color: #e60012;
+}
+.root .ant-table td .cell-operation {
+  margin-right: 12px;
+}
+.ant-alert-with-description {
+  display: none;
+  z-index: 100000;
+}
+.global-element-loading {
+  position: fixed;
+  display: none;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+.global-element-loading .ant-spin {
+  position: absolute;
+}
+.global-element-loading .ant-spin .ant-spin-dot {
+  margin: 0px auto;
+  display: block !important;
+}
+.ant-select-dropdown .antdcustomer-options-delete {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  font-size: 12px;
+  color: #fff;
+}
+.ant-select-dropdown .ant-select-dropdown-menu-item:hover .antdcustomer-options-delete {
+  display: block;
+}
+.ant-select-selection__rendered .ant-select-selection-selected-value .antdcustomer-options-delete {
+  display: none;
+}
+.antdcustomer-popconfirm-noicon .ant-popover-message > .anticon {
+  display: none;
+}
+.ant-input.antdcustomer-input-width50 {
+  width: 50px;
+}
+.ant-input.antdcustomer-input-width70 {
+  width: 70px;
+}
+.ant-input.antdcustomer-input-width90 {
+  width: 90px;
+}
+.in-table-add-product {
+  display: block;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  left: 25px;
+  bottom: 28px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #efefef;
+  color: #666;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.in-table-add-product:hover {
+  color: #333;
+  border: 1px solid #999;
+}
+.antd-img-uploader {
+  display: block;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.antd-img-uploader i {
+  font-size: 40px;
+  padding-top: 30px;
+  color: #00c3be;
+}
+.antd-img-uploader .ant-upload {
+  width: 100%;
+  height: 100%;
+}
+.antd-img-uploader .ant-upload .rc-upload {
+  width: 100%;
+  height: 100%;
+}
+.antd-img-uploader .ant-upload .rc-upload .ehsy-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.upload-excel .rc-upload button {
+  max-width: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sortable-ghost {
+  background-color: #f5fdf7 !important;
+}
+.sortable-chosen {
+  background-color: #f5fdf7 !important;
+}
+.sortable-drag {
+  background-color: #f5fdf7 !important;
+}
+html .root .ant-table th {
+  background: #f9f9f9;
+  color: #999;
+  font-weight: 300;
+}
+html .ant-table-thead > tr > th,
+html .ant-table-tbody > tr > td {
+  color: #333;
+  font-weight: 400;
+}
+html .ant-table tr.ant-table-row-hover,
+html .ant-table tr:hover {
+  background: #f5f5f5;
+}
+html .ant-table-placeholder {
+  font-size: 20px;
+  color: #c7c7c7;
+}
+html .ant-btn:active,
+html .ant-btn.active {
+  color: #00c3be;
+  border-color: #00c3be;
+}
+html .ant-btn:hover,
+html .ant-btn:focus {
+  color: #00c3be;
+  border-color: #00c3be;
+}
+html .ant-btn-primary {
+  color: #ffffff ;
+  background-color: #00c3be;
+  border-color: #00c3be;
+}
+html .ant-btn-primary:active,
+html .ant-btn-primary.active {
+  color: #ffffff ;
+  background-color: #09a276;
+  border-color: #09a276;
+}
+html .ant-btn-primary:hover,
+html .ant-btn-primary:focus {
+  color: #ffffff ;
+  background-color: #09a276;
+  border-color: #09a276;
+}
+html .ant-select-open .ant-select-selection {
+  border-color: #00c3be;
+  box-shadow: 0 0 0 2px rgba(45, 245, 171, 0.2);
+}
+html .ant-input:focus {
+  border-color: #00c3be;
+  box-shadow: 0 0 0 2px rgba(45, 245, 171, 0.2);
+}
+html .ant-input:hover {
+  border-color: #00c3be;
+}
+html .ant-input-number:focus {
+  border-color: #00c3be;
+  box-shadow: 0 0 0 2px rgba(45, 245, 171, 0.2);
+}
+html .ant-input-number:hover {
+  border-color: #00c3be;
+}
+html .ant-input-number-focused {
+  box-shadow: 0 0 0 2px rgba(45, 245, 171, 0.2);
+}
+html .ant-select-selection:hover {
+  border-color: #00c3be;
+}
+html .ant-calendar-selected-day .ant-calendar-date {
+  background: #00c3be;
+}
+html .ant-calendar-date:hover {
+  background: #f5fdf7;
+}
+html .ant-checkbox-checked .ant-checkbox-inner {
+  border-color: #00c3be;
+  background-color: #00c3be;
+}
+html .ant-select-dropdown-menu-item:hover,
+html .ant-select-dropdown-menu-item-active {
+  background-color: #00c3be;
+  color: #ffffff;
+}
+html .ant-select-focused .ant-select-selection,
+html .ant-select-selection:focus,
+html .ant-select-selection:active {
+  border-color: #00c3be;
+  box-shadow: 0 0 0 2px rgba(45, 245, 171, 0.2);
+}
+html .ant-transfer-checkbox-indeterminate .ant-transfer-checkbox-inner {
+  border-color: #00c3be;
+  background-color: #00c3be;
+}
+html .ant-transfer-checkbox-indeterminate:hover .ant-transfer-checkbox-inner {
+  border-color: #00c3be;
+}
+html .ant-radio-button-wrapper-checked {
+  border-color: #00c3be;
+  color: #00c3be;
+  box-shadow: -1px 0 0 0 #00c3be;
+}
+html .ant-radio-button-wrapper-checked:hover {
+  border-color: #09a276;
+  box-shadow: -1px 0 0 0 #09a276;
+  color: #57c5f7;
+}
+html .ant-radio-button-wrapper-checked:first-child {
+  border-color: #00c3be;
+}
+html .ant-radio-button-wrapper:hover,
+html .ant-radio-button-wrapper-focused {
+  color: #00c3be;
+}

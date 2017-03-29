@@ -1,0 +1,74 @@
+//style reset
+@import "../reset.less";
+@import "../all_common.less";
+
+/*passport common*/
+
+.main{
+  width: 100% ;
+  height: 100% ;
+  position: relative;
+}
+
+.header{
+  height: @headerHeight ;
+  width: 100% ;
+  background-color: @backgroundColor ;
+  position: absolute;
+  top: 0px ;
+
+  .logo{
+    color:#42e0d8;
+    font-size: 24px;
+    margin-left: 14%;
+    margin-top: 14px;
+    float: left;
+  }
+  .Vertical{
+    width: 1px;
+    height: 22px;
+    background-color: #dddddd;
+    display: inline-block;
+    margin-left: -93px;
+    margin-top: 21px;
+  }
+  .register{
+    color:#333333;
+    font-size: 18px;
+    float: left;
+    margin-left: 44px;
+    padding-top: 17px;
+  }
+  .login{
+    color:#ffffff;
+    font-size: 18px;
+    float: left;
+    margin-left: 44px;
+    padding-top: 17px;
+  }
+  .pwd{
+    color:#333333;
+    font-size: 18px;
+    float: left;
+    margin-left: 44px;
+    padding-top: 17px;
+  }
+}
+
+.body{
+  position: absolute;
+  top: @headerHeight ;
+  bottom: 0px;
+  width: 100%;
+
+  .body-content{
+    height: 100%;
+    width: 100%;
+  }
+}
+.footer .tabs li {
+  padding-left: 5%;
+}
+.footer span.beian {
+  right: 5%;
+}

@@ -1,0 +1,32 @@
+{
+  "apps" : [
+    {
+      "name" : "saas.ehsy.com",
+      "script" : "./bin/start",
+      "watch": false,
+      "exec_mode": "cluster",
+      "instances": 0,
+      "max_memory_restart": "800M",
+      "env_dev":{
+        "NODE_ENV" : "dev",
+        "STATIC_URL": "/static",
+        "PORT":8088
+      },
+      "env":{
+        "NODE_ENV" : "test",
+        "STATIC_URL": "/static",
+        "PORT":8088
+      },
+      "env_staging":{
+        "NODE_ENV": "staging",
+        "STATIC_URL": "/static",
+        "PORT":8088
+      },
+      "env_production":{
+        "NODE_ENV": "production",
+        "STATIC_URL": "/static",
+        "PORT":8088
+      }
+    }
+  ]
+}

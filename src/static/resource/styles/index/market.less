@@ -1,0 +1,696 @@
+@import '../lesshat.less' ;
+
+/*销售 独有样式*/
+//@baseBackgroundcolor : #03d6d1 ;
+@baseBackgroundcolor : #00c3be ;
+
+@fontColor-white: #ffffff;
+@fontColor-light: #aaaaaa ;
+
+//@tableBlueCell: #0066cc ;
+@tableBlueCell : #3396FF ;
+
+@borderColor: #dddddd ;
+
+
+
+@tableHeaderBackgroundcolor : #f5fdf7 ;
+@tableBodyerBordercolor: #eeeeee ;
+
+
+
+//ehsy color
+//@ehsyBaseColor : #03d6d1 ;
+@ehsyBaseColor : #00c3be ;
+@ehsyBaseColorLight : #f5fdf7 ;
+@ehsyBaseColorDark : #09a276 ;
+@ehsyRedColor: #FF5E5E ;
+
+
+/*css namespace*/
+.market-namespace,
+.purchase-namespace,
+.account-namespace {
+
+  .header{
+    padding: 0px;
+
+    &:after{
+      content: '';
+      height: 1px;
+      background: #dddddd;
+      position: absolute;
+      left: 50px;
+      right: 50px;
+      bottom: 0px;
+    }
+  }
+
+  .nav-return-name{
+    font-size: 16px;
+    //color:red;
+    color: @ehsyBaseColor ;
+    cursor: pointer;
+    margin-left: 50px;
+    display: inline-block;
+    .transition(all 0.2s ease-out) ;
+    &:hover{
+      .transform(scale(1.2)) ;
+    }
+    i{
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      margin-right: 15px;
+    }
+    .re-arrow{
+
+    }
+  }
+
+  .header-operation{
+
+
+
+    .operation{
+      .transition(all 0.3s ease-out) ;
+    }
+
+    .save{
+      background-color: @ehsyBaseColor ;
+      color : @fontColor-white ;
+      //border-radius: 6px 0px 0px 6px;
+      border-radius: 5px;
+      border:1px solid @ehsyBaseColor;
+      width: 120px;
+      right: 50px;
+      &:hover{
+        background-color: @ehsyBaseColorDark ;
+        border:1px solid @ehsyBaseColor ;
+      }
+    }
+    .save-add{
+      //border:1px solid @ehsyBaseColor;
+      border: 1px solid #ddd;
+      //color : @ehsyBaseColor;
+      width: 120px;
+      border-radius: 5px;
+      right: 50px;
+      right: 190px;
+      //border-left: 0px ;
+      //border-right: 0px ;
+      background-color: #efefef;
+      color: #666;
+
+      &:hover{
+        //border:1px solid @ehsyBaseColorDark;
+        //color : @ehsyBaseColorDark;
+        color: #333;
+        border: 1px solid #999;
+      }
+    }
+    .cancel{
+      border-radius: 0px 6px 6px 0px;
+      border:1px solid @baseBackgroundcolor;
+      color : @baseBackgroundcolor;
+      width: 70px;
+      &:hover{
+        border:1px solid @ehsyBaseColorDark;
+        color : @ehsyBaseColorDark;
+      }
+    }
+  }
+
+
+  .content{
+    .new{
+      position: absolute;
+      width: 40px;
+      margin-left: 15px;
+      color: @tableBlueCell;
+      font-size: 12px;
+    }
+  }
+  .productlist-wrap {
+
+    //padding-left: 30px;
+    //padding-left: 50px;
+    padding-right: 50px;
+
+    .productlist {
+      //border-top: 1px dashed @borderColor;
+    }
+
+    .title {
+      text-align: left;
+      display: inline-block;
+      width: 100%;
+      //margin-top: 20px;
+      margin-top: 35px;
+      //margin-bottom: 10px;
+      margin-bottom: 20px;
+      //font-size: 18px;
+      font-size: 15px;
+    }
+
+    .staticCount {
+      //background-color: #eeeeee;
+      display: block;
+      padding-left: 8px;
+      height: 60px;
+      //line-height: 30px;
+      font-size: 12px;
+      text-align: right;
+      //padding-right: 60px;
+      margin-top: 20px;
+      .staticCount-title {
+        float: left;
+      }
+
+      .sta-line {
+        .sta-lable {
+
+        }
+        .sta-value {
+          display: inline-block;
+          min-width: 90px;
+        }
+      }
+    }
+  }
+
+  .react-component-layer{
+    .header-title{
+      font-size: 18px;
+    }
+    .layer-wrap{
+      box-shadow: 0px 0px 6px 4px #ddd;
+    }
+  }
+  .highlevel.react-component-layer{
+    z-index: 300;
+    .layer-mask{
+      background-color: rgba(255,255,255,0);
+    }
+    .layer-wrap{
+      background: rgba(255,255,255,1);
+      overflow-y: auto;
+    }
+    .transpant-wrap{
+      width: 100%;
+      padding: 70px;
+      font-size: 12px;
+      //background-color: #fff ;
+    }
+
+
+    .row1{
+      height: 50px ;
+      line-height: 50px;
+      font-size: 14px;
+    }
+    .col1{
+      text-align: left;
+    }
+    .row2{
+
+    }
+    .col2{
+      .input {
+        width: 300px;
+        margin-right: 10px;
+      }
+
+    }
+    .row3{
+      margin-top: 10px;
+      height: 35px;
+      line-height: 30px;
+      .fontSize14{
+        font-size: 14px;
+      }
+    }
+
+    .row4{
+      .r-table{
+
+        background-color: #fff;
+        .row-header{
+          background-color: @tableHeaderBackgroundcolor;
+          padding-left: 8px;
+          padding-right: 8px;
+          cursor: default;
+        }
+        .row-content{
+          cursor: pointer;
+        }
+      }
+
+      .line{
+        padding-left: 8px;
+        padding-right: 8px;
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 1px solid #eeeeee;
+        .s1{
+          display: inline-block;
+          width: 40%;
+        }
+        .s2{
+          display: inline-block;
+          width: 30%
+        }
+        .s3{
+          display: inline-block;
+          width: 30%;
+        }
+      }
+    }
+    .row5{
+      margin-top: 20px;
+      height: 30px ;
+      line-height: 30px;
+      .blue{
+        cursor: pointer;
+      }
+    }
+    .row6{
+      display: none;
+      .input{
+        width: 100%;
+      }
+    }
+    .row6.show{
+      display: block;
+    }
+    .row7{
+      text-align: right;
+      .btn-submit{
+        margin-top: 30px;
+        height: 38px;
+        width: 100px;
+        background-color: @baseBackgroundcolor;
+        color: @fontColor-white;
+        cursor: pointer;
+      }
+      .ant-btn-ghost {
+        color: #666;
+        background-color: transparent;
+        border-color: #d9d9d9;
+      }
+    }
+
+  }
+
+  .shadeForClick{
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:99999;
+    height:100%;
+    width:100%;
+    background:black;
+    opacity:0;
+    filter:alpha(opacity=40)
+  }
+
+  //layer3
+  .marketDetail {
+
+    //1116
+    .header{
+      &:after{
+        height: 0px;
+      }
+    }
+
+    .h3 {
+      font-weight: normal;
+      //font-size: 16px;
+      font-size: 18px;
+      padding-top: 15px;
+      display: block;
+      line-height: 36px;
+    }
+    .h-span {
+      line-height: 28px;
+      white-space: nowrap;
+    }
+    .h-span-2 {
+      line-height: 30px;
+      //color: #aaaaaa;
+      white-space: nowrap;
+
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+    }
+    .span-third-in-one{
+      display: inline-block;
+      width: 26%;
+      margin-right: 2%;
+      text-align: left;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+      .h-label{
+        display: inline-block;
+        min-width: 56px;
+        text-align: justify;
+        text-align: end;
+        text-align-last: justify;
+        text-justify: distribute;
+      }
+      .h-dot{
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .h-info {
+        display: inline-block;
+        &.red{
+          //font-size: 18px;
+        }
+        //margin-right: 30px;
+      }
+    }
+
+    .header {
+      //height: 120px;
+      height: 300px;
+      line-height: 1;
+      //padding-right: 18px;
+      position: relative;
+      z-index: 100;
+      padding-left: 0px;
+      padding-right: 0px;
+
+      .nav-return-name{
+        font-size: 16px;
+        //color:red;
+        color: @ehsyBaseColor ;
+        cursor: pointer;
+        margin-left: 50px;
+        display: inline-block;
+        .transition(all 0.2s ease-out) ;
+        &:hover{
+          .transform(scale(1.2)) ;
+        }
+        i{
+          display: inline-block;
+          position: relative;
+          top: 2px;
+          margin-right: 15px;
+        }
+        .re-arrow{
+
+        }
+      }
+
+    }
+    .header-west {
+      //height: 100%;
+      height: 200px;
+      //position: absolute;
+      //right: 270px;
+      //left: 50px;
+      display: block;
+      background: #f7f7f7;
+      padding-left: 50px;
+
+    }
+    .header-east {
+      display: block;
+      //width: 240px;
+      width: 100%;
+      //height: 100%;
+      height: 100px;
+      line-height: 100px;
+      //float: right;
+      //line-height: 30px;
+
+
+      .edit {
+        border: 1px solid #ddd;
+        background-color: #efefef;
+        color: #666;
+        width: 100px;
+        height: 36px;
+        display: inline-block;
+        border-radius: 7px;
+        position: absolute;
+        //top: 20px;
+        top: 32px;
+        //right: 78px;
+        right: 50px;
+        text-align: center;
+        line-height: 36px;
+        cursor: pointer;
+        .transition(all 0.15s ease-out);
+        &:hover{
+          color: #333;
+          border: 1px solid #999;
+        }
+      }
+
+
+      .sprite-label_已撤销{
+        display: inline-block;
+        margin-left: 50px;
+      }
+    }
+    .header-north {
+      //height: 80px;
+      //line-height: 80px;
+      //border-bottom: 1px dashed @borderColor;
+      padding-top: 17px;
+      padding-bottom: 13px;
+    }
+    .header-south {
+
+    }
+
+    .left-irow {
+      border: 1px solid @baseBackgroundcolor;
+      height: 36px;
+      width: 36px;
+      display: inline-block;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 22px;
+      color: #999;
+      position: absolute;
+      top: 20px;
+      &.revoke {
+        right : 80px;
+      }
+    }
+    //.edit {
+    //  border: 1px solid @baseBackgroundcolor;
+    //  background-color: @baseBackgroundcolor;
+    //  color: @fontColor-white;
+    //  width: 120px;
+    //  height: 36px;
+    //  display: inline-block;
+    //  border-radius: 3px 0px 0px 3px;
+    //  position: absolute;
+    //  top: 20px;
+    //  right: 78px;
+    //  text-align: center;
+    //  line-height: 36px;
+    //  cursor: pointer;
+    //}
+    .down-irow {
+      border: 1px solid @baseBackgroundcolor;
+      width: 60px;
+      height: 36px;
+      border-radius: 0px 3px 3px 0px;
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+      right: 18px;
+      color: #999;
+      line-height: 36px;
+      text-align: center;
+
+      &:hover {
+        border-bottom: 0px;
+        border-radius: 0px 3px 0px 0px;
+        .drop-list {
+          display: block;
+        }
+      }
+
+      .drop-list {
+        position: absolute;
+        display: none;
+        border-left: 1px solid @baseBackgroundcolor;
+        border-right: 1px solid @baseBackgroundcolor;
+        border-bottom: 1px solid @baseBackgroundcolor;
+        top: 35px;
+        left: -1px;
+        border-radius: 0px 0px 3px 3px;
+        .drop-line {
+          width: 58px;
+          height: 30px;
+          background-color: #ffffff;
+          color: #999999;
+          &:hover {
+            color: @baseBackgroundcolor;
+            background-color: #eeeeee;
+          }
+        }
+      }
+
+    }
+
+    //因为这些的头部比较高,所以需要重设content-wrap高度
+    .content-wrap{
+      //top: 120px;
+      top: 300px;
+      padding-top: 0px;
+      padding-left: 50px;
+
+      .sprite-label_已撤销{
+        position : absolute;
+        right : 5px;
+      }
+
+      .content{
+        position: relative;
+        padding-top: 40px;
+
+        .customer-form-image{
+          position: absolute;
+          width: 120px;
+          height: 120px;
+          top: 40px;
+          right: 50px;
+          border: 1px solid #dddddd;
+          border-radius: 2px;
+          //background: url('../../images/0lily0.jpg');
+          //background-size: 120px 120px;
+          img{
+            max-width: 100%;
+            max-height: 100%;
+            display: inline-block;
+          }
+        }
+
+      }
+
+    }
+
+    .form-static {
+      //padding-left: 50px;
+      .view-detail {
+        font-size: 12px;
+        color: @tableBlueCell;
+        //margin-left: 20px;
+        margin-left: 50px;
+        position: relative;
+        &:hover{
+          .detail-wrap{
+            display: block;
+          }
+        }
+      }
+    }
+    .detail-wrap {
+      display: none;
+      position: absolute;
+      line-height: 20px;
+      width: 360px;
+      //height: 160px;
+      min-height: 57px;
+      border: 1px solid @ehsyBaseColor;
+      top: -50px;
+      left: 80px;
+      padding-left: 25px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      background-color: white;
+      border-radius: 4px;
+      color: @fontColor-light;
+      background: rgba(255,255,255,0.8);
+      z-index: 10;
+      &:before{
+
+      }
+      .span-1, .span-3 {
+        display: block;
+        height: 20px;
+        line-height: 20px;
+        margin-top: 10px;
+        position: relative;
+        &:before{
+          content: '';
+          width: 6px;
+          height: 6px;
+          border-radius: 3px;
+          background-color: #aaaaaa;
+          position: absolute;
+          left: -13px;
+          top: 7px;
+        }
+      }
+      .span-2, .span-4 {
+        span {
+
+        }
+      }
+      .span-v {
+        margin-left: 4px;
+        margin-right: 15px;
+      }
+
+    }
+
+    //antd
+    .ant-form-item {
+      //margin-bottom: 4px;
+      margin-bottom: 0px;
+    }
+    .ant-form-item-control .detail-wrap .span-2, .ant-form-item-control .detail-wrap .span-4 {
+      line-height: 0px;
+    }
+  }
+
+  //10.26
+  //antd reset
+  .layer-wrap{
+
+    .content{
+      form .ant-input-number{
+        width : 100% ;
+      }
+      .ant-calendar-picker{
+        width : 100% ;
+      }
+
+      //1116
+      .ant-form-item-label{
+        text-align: left;
+      }
+    }
+  }
+  .no-object-to-select{
+    margin-top: 20px;
+    display: block;
+    color: #999;
+  }
+
+}
+
+
+/*全局modal*/
+.market-modal1{
+  .ant-modal-footer{
+    display: none;
+  }
+  .save-submit{
+    width: 100%;
+  }
+}
+

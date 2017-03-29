@@ -1,0 +1,916 @@
+@import "../lesshat.less";
+
+
+/*销售 独有样式*/
+//@baseBackgroundcolor : #03d6d1 ;
+@baseBackgroundcolor : #00c3be ;
+
+@fontColor-white: #ffffff;
+@fontColor-light: #aaaaaa ;
+
+@tableBlueCell: #0066cc ;
+
+@borderColor: #dddddd ;
+
+
+
+@tableHeaderBackgroundcolor : #f5fdf7 ;
+@tableBodyerBordercolor: #eeeeee ;
+
+//ehsy color
+//@ehsyBaseColor : #03d6d1 ;
+@ehsyBaseColor : #00c3be ;
+@ehsyBaseColorLight : #f5fdf7 ;
+@ehsyBaseColorDark : #09a276 ;
+
+.body{
+
+}
+
+
+.home-namespace{
+
+  .body{
+    position: absolute;
+    top: 70px;
+    bottom: 15px;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+
+  .crumbs{
+    width: 1200px;
+    margin: 0px auto;
+    display: block;
+    display: none;
+  }
+
+  .all-statistics-wrap{
+    width: 1200px;
+    margin: 0px auto;
+  }
+
+  .all-statistics{
+    width: 1200px;
+    height: 180px;
+    background: white;
+    .comp-title{
+      height: 50px;
+      line-height:50px;
+      font-size: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .comp-statistics{
+      height: 130px;
+
+      .each-statistics{
+        display: inline-block;
+        height: 115px;
+        width: 256px;
+        margin-right: 20px;
+        margin-left: 20px;
+        border: 1px solid @borderColor;
+        border-radius: 3px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        cursor: pointer;
+
+        .transition(all 0.15s ease-out) ;
+        &:hover{
+          .transform(scale(1.15));
+          .box-shadow(0 0 0 5px rgba(45, 245, 153, 0.2));
+          border-color: @ehsyBaseColor;
+          background-color: @ehsyBaseColorLight;
+
+          .c-title{
+            background: @ehsyBaseColorLight;
+          }
+          .c-title-text{
+            color: @ehsyBaseColorDark;
+          }
+
+        }
+
+        .s-title{
+          font-size: 14px;
+          text-align: left;
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+
+        .s-count{
+          text-align: center;
+          font-size: 30px;
+          line-height: 1;
+          padding-bottom: 10px;
+          color: #ce3333;
+        }
+
+        .s-foot{
+          text-align: left;
+          border-top: 1px dashed #ccc;
+          padding-top: 8px;
+          color: #aaa;
+        }
+      }
+
+    }
+
+  }
+
+  .chart-outer-title{
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 8px;
+  }
+
+  .chart-area{
+    width: 1220px;
+    //common
+    .e-chart-wrap{
+      position: relative;
+      display : inline-block;
+      width: 590px;
+      height: 350px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      background-color: white;
+      vertical-align: top;
+      border-radius: 3px;
+
+      .transition(all 0.15s ease-out) ;
+      &:hover{
+        &:hover{
+          .box-shadow(0 0 0 2px rgba(45, 245, 153, 0.35));
+          border-color: @ehsyBaseColorDark;
+        }
+      }
+
+      .c-title{
+        height: 38px;
+        line-height: 38px;
+        border-bottom: 1px solid @borderColor;
+        position: relative;
+        padding-left: 20px;
+        z-index: 10;
+        cursor: move;
+        .transition(all 0.15 ease-out);
+        .c-title-text{
+          font-size: 14px;
+          .transition(all 0.15 ease-out);
+        }
+
+        .c-title-operation{
+          position: absolute;
+          right: 10px;
+          top: 0px;
+
+          .c-operation{
+            display: inline-block;
+            width: 38px;
+            height: 38px;
+            vertical-align: top;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+
+            .c-operation-ul{
+              display: none;
+            }
+
+            &:hover{
+              background-color: @ehsyBaseColor;
+
+              .c-operation-ul{
+                position: absolute;
+                display: block;
+                width: 100px;
+                background: @ehsyBaseColor;
+                color: #fff;
+                top: 38px;
+                font-size: 13px;
+
+                li{
+                  padding-left: 5px;
+                  cursor: pointer;
+                  .transition(all 0.15 ease-out);
+                  &:hover{
+                    color : #fff;
+                    background-color: @ehsyBaseColorDark;
+                  }
+                }
+
+              }
+
+            }
+            .sprite-btn_add, .sprite-btn_setting_s, .sprite-btn_del_s, .sprite-btn_refresh_s{
+              display: inline-block;
+            }
+          }
+
+        }
+      }
+      .c-content{
+        position: relative;
+
+        height: 312px;
+        padding: 10px 15px 15px 15px;
+
+        .c-count{
+          height: 35px;
+          line-height: 35px;
+
+          .c-count-choose{
+            margin-right: 20px;
+          }
+
+        }
+
+        .e-chart{
+          position: absolute;
+          top:10px;
+          bottom: 15px;
+          left: 15px;
+          right: 15px;
+        }
+        /* 差异性*/
+        .chart-market{
+          top: 45px;
+
+          .modal-content{
+            padding-left: 20px;
+          }
+        }
+        .chart-purchase-store{
+          top: 45px;
+        }
+        .chart-capital{
+
+        }
+        .chart-market-profit{
+          top: 45px;
+        }
+        .chart-purchase{
+          top: 45px;
+        }
+        .chart-customer{
+          top: 45px;
+          .chart-customer-left , .chart-customer-right{
+            float: left;
+          }
+        }
+        .chart-warn{
+          top: 45px;
+        }
+
+        .chart-product{
+          top: 45px;
+        }
+        .chart-user{
+          top: 45px;
+        }
+        .chart-record{
+          top: 45px;
+        }
+      }
+
+    }
+    //.e-chart-wrap:nth-child(2n){
+    //  margin-right: 0px;
+    //}
+
+  }
+
+}
+
+/*差异性*/
+.chart-market-wrap{
+  .home-modal-market{
+    z-index: 20;
+    display: none ;
+    position: absolute;
+    top: 0px;
+    width: 590px;
+    height: 350px;
+    background-color: white;
+    vertical-align: top;
+    border-radius: 3px;
+    &.content-show{
+      display: inline-block;
+    }
+    .ant-btn-primary{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+.chart-purchase-store-wrap{
+  .c-count{
+    position: relative;
+  }
+  .left-span{
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 40%;
+    height: 100%;
+  }
+  .center-span{
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .right-span{
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    text-align: right;
+  }
+}
+.chart-capital-wrap{
+
+}
+.chart-market-profit-wrap{
+
+}
+.chart-purchase-wrap{
+
+}
+.chart-customer-wrap{
+  .center-span{
+    .text-right{
+      margin-left: 20px;
+    }
+  }
+  .chart-customer{
+    //padding : 30px ;
+    .chart-customer-left{
+
+    }
+    .chart-customer-right{
+      //float : right ;
+    }
+  }
+}
+.chart-warn-wrap{
+
+}
+.chart-record-wrap{
+  .c-count{
+    position: relative;
+  }
+  .left-span{
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 40%;
+    height: 100%;
+    white-space: nowrap;
+  }
+  .right-span{
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    text-align: right;
+  }
+}
+.chart-product-wrap{
+  .c-count{
+    position: relative;
+  }
+  .left-span{
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 40%;
+    height: 100%;
+    white-space: nowrap;
+  }
+  .right-span{
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    text-align: right;
+  }
+}
+.chart-user-wrap{
+  .c-count{
+    position: relative;
+  }
+  .left-span{
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 40%;
+    height: 100%;
+    white-space: nowrap;
+  }
+  .right-span{
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    text-align: right;
+  }
+}
+
+
+//config
+.chart-config-wrap{
+
+  .ant-customer-icon-large{
+    font-size: 130px;
+    color: #b7e6e5;
+    text-align: center;
+    display: block;
+    padding-top: 70px;
+  }
+
+  &:hover{
+    .checkbox-chart-config{
+      .opacity(1) ;
+    }
+    .ant-customer-icon-large{
+      //opacity: 0 ;
+    }
+  }
+
+  .checkbox-chart-config{
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: white;
+
+    z-index: 10;
+    .opacity(0) ;
+    .transition(all 0.4s ease-in-out);
+
+    label.ant-checkbox-wrapper{
+      width: 28%;
+      text-align: center;
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+    .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+      margin-left: 0px;
+    }
+  }
+}
+
+
+
+//销售dashboard页面
+.home-namespace .role-market.all-statistics-wrap{
+  .all-statistics{
+    height : 155px ;
+    padding-top: 20px;
+    .comp-statistics{
+      height : 115px ;
+      .each-statistics{
+        cursor:pointer;
+        width: 360px;
+        text-align: center;
+        vertical-align: top;
+        font-size: 18px;
+        padding-top: 18px;
+        color: #BBBBBB;
+        .ant-customer-icon-large{
+          font-size: 28px;
+        }
+        &.hide{
+          display: none;
+        }
+
+        &.targetSet{
+          background-color: #d8fbfa ;
+          font-size: 12px;
+          padding-top: 0px;
+        }
+
+        &:hover{
+          color: @baseBackgroundcolor;
+        }
+
+        .tar-form{
+          height: 30px;
+          line-height:30px;
+          margin-top: 8px;
+        }
+        .tar-lable{
+          float: left;
+        }
+        .tar-input{
+          float: right;
+        }
+        .tar-ope{
+          .tar-cancel{
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .chart-market-wrap{
+    width: 1200px;
+    height: 400px;
+    .c-content-left{
+      position: relative;
+      padding: 15px 15px 15px 15px;
+      height: 400px;
+      width: 900px;
+      float: left;
+
+      .c-count-span{
+        padding-left: 40px;
+      }
+    }
+    .c-content-right{
+      height: 330px;
+      width: 300px;
+      float: right;
+      //background-color: #eee;
+      padding: 5px 15px 15px 15px;
+      margin-top: 30px;
+      border-left: 1px dashed @borderColor;
+      .blo{
+        height: 50px;
+        width: 250px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        .blo-line{
+          float: left;
+          width: 50px;
+          height: 50px;
+          border: 1px solid @borderColor;
+          text-align: center;
+          .blo-block{
+            height: 25px;
+            line-height: 25px;
+          }
+          .blo-block-top{
+            height: 25px;
+            line-height: 25px;
+            border-bottom: 1px solid @borderColor;
+          }
+          .blo-block-all{
+            height: 50px;
+            line-height: 50px;
+          }
+        }
+        .blo-span{
+          float: right;
+          width: 200px;
+          height: 50px;
+          text-align: center;
+          .blo-title{
+            width: 210px;
+            font-size: 13px;
+          }
+          .blo-value{
+            width: 210px;
+            font-size: 24px;
+          }
+        }
+        &.blo1{
+          margin-bottom: 50px;
+        }
+      }
+
+    }
+  }
+
+}
+//采购员视角
+.home-namespace .role-purchase.all-statistics-wrap{
+  .all-statistics{
+    height : 155px ;
+    padding-top: 20px;
+    .comp-statistics{
+      height : 115px ;
+      .each-statistics{
+        cursor:pointer;
+        width: 360px;
+        text-align: center;
+        vertical-align: top;
+        font-size: 18px;
+        padding-top: 18px;
+        color: #BBBBBB;
+        .ant-customer-icon-large{
+          font-size: 28px;
+        }
+        &:hover{
+          color: @baseBackgroundcolor;
+        }
+
+      }
+    }
+  }
+  .chart-purchase-store-wrap{
+    width: 1200px;
+    height: 500px;
+
+    .c-count{
+      height: 30px;
+      border-bottom: 1px dashed @borderColor;
+      .left-span{
+        font-size: 15px;
+      }
+    }
+
+    .c-content-left{
+      position: relative;
+      padding: 15px 15px 15px 15px;
+      height: 400px;
+      width: 900px;
+      float: left;
+      .month-select{
+        height: 90px;
+        padding-top: 35px;
+        padding-left: 130px;
+      }
+    }
+    .c-content-right{
+      height: 430px;
+      width: 300px;
+      float: right;
+      border-left : 1px dashed @borderColor ;
+      //background-color: #eee;
+      padding: 5px 15px 15px 15px;
+      margin-top: 30px;
+      border-left: 1px dashed @borderColor;
+
+    }
+  }
+}
+//财务视角
+.home-namespace .role-finance.all-statistics-wrap{
+  .all-statistics{
+    height : 155px ;
+    padding-top: 20px;
+    .comp-statistics{
+      height : 115px ;
+      .each-statistics{
+        width: 360px;
+        text-align: center;
+      }
+    }
+  }
+  .chart-area{
+    .c-title-text{
+      height: 38px;
+      line-height: 38px;
+      width: 120px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      &.active{
+        border-bottom: 2px solid @ehsyBaseColor;
+      }
+    }
+    .content-hide{
+      display: none;
+    }
+  }
+  //异常警告
+  .chart-warn-wrap{
+    width: 1200px;
+    height: 500px;
+
+    .c-count{
+      height: 70px;
+      border-bottom: 1px dashed @borderColor;
+      text-align: center;
+      .left-span{
+        font-size: 15px;
+      }
+    }
+
+    .c-content-left{
+      position: relative;
+      padding: 15px 15px 15px 15px;
+      height: 400px;
+      width: 900px;
+      float: left;
+      .mouth-select{
+        height: 90px;
+      }
+    }
+    .c-content-right{
+      height: 430px;
+      width: 300px;
+      float: right;
+      border-left : 1px dashed @borderColor ;
+      //background-color: #eee;
+      padding: 5px 15px 15px 15px;
+      margin-top: 14px;
+      border-left: 1px dashed @borderColor;
+      .center-span-title{
+        display: block;
+        height: 30px;
+        line-height: 30px;
+      }
+      .center-span-money{
+        display: block;
+        font-size: 22px;
+        height: 40px;
+        line-height: 40px;
+        &.font-red{
+          color : red;
+        }
+      }
+      .press-gathering{
+        display: block;
+        margin: 16px auto;
+      }
+    }
+  }
+  //下周应付
+  .chart-next-wrap{
+    width: 1200px;
+    height: 500px;
+
+    .c-count{
+      height: 30px;
+      border-bottom: 1px dashed @borderColor;
+      .left-span{
+        font-size: 15px;
+      }
+    }
+
+    .c-content-left{
+      position: relative;
+      padding: 15px 15px 15px 15px;
+      height: 400px;
+      width: 900px;
+      float: left;
+      .mouth-select{
+        height: 90px;
+      }
+    }
+    .c-content-right{
+      height: 430px;
+      width: 300px;
+      float: right;
+      border-left : 1px dashed @borderColor ;
+      //background-color: #eee;
+      padding: 5px 15px 15px 15px;
+      margin-top: 14px;
+      border-left: 1px dashed @borderColor;
+      .table-div{
+        margin-top: -14px;
+      }
+    }
+  }
+
+  //资金流动
+  .chart-capital-wrap{
+    width: 1200px;
+    height: 500px;
+
+    .c-count{
+      height: 70px;
+      border-bottom: 1px dashed @borderColor;
+      text-align: center;
+      .left-span{
+        font-size: 15px;
+      }
+    }
+
+    .c-content-left{
+      position: relative;
+      padding: 15px 15px 15px 15px;
+      height: 400px;
+      width: 900px;
+      float: left;
+      .mouth-select{
+        height: 90px;
+      }
+    }
+    .c-content-right{
+      height: 430px;
+      width: 300px;
+      float: right;
+      border-left : 1px dashed @borderColor ;
+      //background-color: #eee;
+      padding: 5px 15px 15px 15px;
+      margin-top: 30px;
+      border-left: 1px dashed @borderColor;
+      .center-span-title{
+        display: block;
+        height: 30px;
+        line-height: 30px;
+      }
+      .center-span-money{
+        display: block;
+        font-size: 22px;
+        height: 40px;
+        line-height: 40px;
+        &.font-red{
+          color : red;
+        }
+      }
+    }
+  }
+
+  //销售毛利
+  .chart-market-wrap{
+    width: 1200px;
+    height: 500px;
+
+    .c-count{
+      height: 30px;
+      border-bottom: 1px dashed @borderColor;
+      .left-span{
+        font-size: 15px;
+      }
+    }
+
+    .c-content-left{
+      position: relative;
+      padding: 15px 15px 15px 15px;
+      height: 400px;
+      width: 900px;
+      float: left;
+      .mouth-select{
+        height: 90px;
+      }
+    }
+    .c-content-right{
+      height: 430px;
+      width: 300px;
+      float: right;
+      border-left : 1px dashed @borderColor ;
+      //background-color: #eee;
+      padding: 5px 15px 15px 15px;
+      margin-top: 30px;
+      border-left: 1px dashed @borderColor;
+      .blo{
+        height: 70px;
+        text-align: center;
+        margin-top: 20px;
+        .blo-line{
+          display: inline-block;
+          height: 70px;
+          width: 50px;
+          .blo-block{
+            display: block;
+          }
+        }
+        .blo-span{
+          display: inline-block;
+          margin-left: 30px;
+          .blo-title{
+            height: 30px;
+            line-height: 30px;
+          }
+          .blo-value{
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            font-size: 22px;
+            &.font-red{
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+//loading for home
+.body .home-waiting{
+
+}

@@ -1,0 +1,499 @@
+/*销售 独有样式*/
+/*css namespace*/
+.base-namespace .search-wrap.base-product {
+  display: inline-block;
+}
+.base-namespace .layer1 .header {
+  height: 75px;
+  line-height: 75px;
+  position: relative;
+}
+.base-namespace .layer1 .header .product-name {
+  font-size: 16px;
+  color: #00c3be;
+  cursor: pointer;
+  margin-left: 20px;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.base-namespace .layer1 .header .product-name:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.base-namespace .layer1 .header .product-name i {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-right: 15px;
+}
+.base-namespace .layer1 .header .operation {
+  position: absolute;
+  right: 40px;
+  top: 18px;
+  width: 85px;
+  height: 36px;
+}
+.base-namespace .layer1 .header .operation a {
+  display: inline-block;
+  border: 1px solid #ddd;
+  line-height: 34px;
+  vertical-align: top;
+  text-align: center;
+}
+.base-namespace .layer1 .header .operation a:hover {
+  border: 1px solid #00c3be;
+  background: #00c3be;
+}
+.base-namespace .layer1 .header .operation .left-arrow {
+  width: 36px ;
+  height: 36px ;
+  border-radius: 3px;
+  margin-right: 20px;
+  font-size: 18px;
+  line-height: 31px;
+  color: #aaaaaa;
+}
+.base-namespace .layer1 .header .operation .edit-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 3px ;
+  background: #ffffff;
+  color: #ffffff;
+}
+.base-namespace .layer1 .header .operation .edit-arrow i {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+.base-namespace .layer1 .header .operation .down-arrow {
+  z-index: 10;
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  margin-left: 12px;
+  height: 36px;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 3px 3px 3px 3px;
+}
+.base-namespace .layer1 .header .operation .down-arrow:before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 10px;
+  top: 35px;
+  left: 0px;
+  background: transparent;
+}
+.base-namespace .layer1 .header .operation .down-arrow:after {
+  content: '';
+  position: absolute;
+}
+.base-namespace .layer1 .header .operation .down-arrow i {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+}
+.base-namespace .layer1 .header .operation .down-arrow .more-operation-ul {
+  display: none;
+}
+.base-namespace .layer1 .header .operation .down-arrow:hover {
+  background-color: #00c3be;
+  cursor: pointer;
+}
+.base-namespace .layer1 .header .operation .down-arrow:hover .more-operation-ul {
+  position: absolute;
+  display: block;
+  width: 110px;
+  background: #fff;
+  top: 42px;
+  right: 0px;
+  border: 1px solid #ddd ;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0px 0px 13px 1px #ddd;
+}
+.base-namespace .layer1 .header .operation .down-arrow:hover .more-operation-ul li {
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #666666;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.base-namespace .layer1 .header .operation .down-arrow:hover .more-operation-ul li:hover {
+  background-color: #00c3be;
+  color: #ffffff ;
+}
+.base-namespace .layer1 .content-wrap {
+  padding: 30px 40px 40px 40px;
+  box-shadow: 0px 7px 6px 3px #ddd;
+}
+.base-namespace .layer1 .content-wrap .content-title {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.base-namespace .layer1 .content table {
+  width: 100%;
+  font-size: 12px;
+}
+.base-namespace .layer1 .content table tr {
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.base-namespace .layer1 .content table tr:hover {
+  background-color: #f5f5f5;
+}
+.base-namespace .layer1 .content table tbody tr {
+  background-color: #ffffff;
+}
+.base-namespace .layer1 .content table td {
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.base-namespace .layer1 .content table td.cat {
+  color: #aaaaaa;
+  border-left: 1px solid #dddddd;
+  border-right: 0px;
+  width: 30%;
+  text-align: center;
+  padding-left: 0px;
+  background: #f9f9f9;
+}
+.base-namespace .filter-wrap {
+  margin-bottom: 20px;
+}
+.base-namespace .searc-wrap-customer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  text-align: left;
+}
+.base-namespace .searc-wrap-customer .ant-input-wrapper {
+  display: inline-block;
+  margin-right: 10px;
+  width: 220px;
+}
+.base-namespace .searc-wrap-customer .customer-input {
+  display: inline-block;
+}
+/*全局modal*/
+.ant-modal {
+  /*.ant-form-item-label{
+    text-align: left;
+    padding-left: 60px;
+  }*/
+}
+.ant-modal .ant-btn-primary {
+  background-color: #00c3be;
+  border-color: #00c3be;
+}
+.base-modal1 .ant-modal-footer {
+  display: none;
+}
+.base-modal1 .customer-define {
+  position: absolute;
+  cursor: pointer;
+  right: -65px;
+  top: 0px;
+  color: #0066cc;
+}
+.base-modal1 .submit-save-add {
+  width: 45%;
+  font-size: 12px;
+  text-align: center;
+}
+.base-modal1 .submit-save-add.none {
+  display: none;
+}
+.base-modal1 .submit-save {
+  width: 45%;
+  margin-left: 10%;
+  font-size: 12px;
+  text-align: center;
+}
+.base-modal1 .submit-save.none {
+  display: none;
+}
+.base-modal1 .submit-save-edit {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+.base-modal1 .submit-save-edit.none {
+  display: none;
+}
+.base-modal2 {
+  width: 700px !important;
+}
+.base-modal2 .b-span {
+  display: inline-block;
+}
+.base-modal2 .b-span1 {
+  width: 23% ;
+}
+.base-modal2 .b-span2 {
+  width: 6%;
+  text-align: center;
+}
+.base-modal2 .b-span3 {
+  width: 46%;
+}
+.base-modal2 .b-span4 {
+  width: 6%;
+  text-align: center;
+}
+.base-modal2 .b-span5 {
+  width: 19%;
+}
+.base-modal2 .b-span6 {
+  width: 32%;
+}
+.base-modal2 .b-span7 {
+  width: 32%;
+  margin-left: 2%;
+}
+.base-modal2 .b-span8 {
+  width: 32%;
+  margin-left: 2%;
+}
+.base-modal2 .ant-modal-footer {
+  display: none;
+}
+.base-modal2 .submit-save-add {
+  width: 45%;
+  font-size: 12px;
+  text-align: center;
+}
+.base-modal2 .submit-save-add.none {
+  display: none;
+}
+.base-modal2 .submit-save {
+  width: 45%;
+  margin-left: 10%;
+  font-size: 12px;
+  text-align: center;
+}
+.base-modal2 .submit-save.none {
+  display: none;
+}
+.base-modal2 .submit-save-edit {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+.base-modal2 .submit-save-edit.none {
+  display: none;
+}
+.base-modal3 .ant-steps {
+  width: 74%;
+  margin: 0 auto;
+}
+.base-modal3 .ant-steps .ant-steps-head-inner {
+  border-color: #00c3be !important;
+  background-color: #00c3be !important;
+}
+.base-modal3 .ant-steps .ant-steps-status-wait .ant-steps-head-inner {
+  border-color: #ccc !important;
+  background-color: #fff !important;
+}
+.base-modal3 .ant-modal-content {
+  font-size: 14px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body {
+  height: 486px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .steps {
+  margin-top: 25px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport {
+  display: block;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport.none {
+  display: none;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importTips {
+  position: relative;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importTips .text1,
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importTips .text2 {
+  display: inline-block;
+  margin-top: 30px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importTips .text2 {
+  color: #aaaaaa;
+  margin-left: 10px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importTips .text2:hover.text4 {
+  display: block;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importTips .text3 {
+  display: block;
+  margin-top: 27px;
+  margin-left: 24px;
+  color: #00c3be;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importTips .text4 {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 64px;
+  border: 1px solid #00d6b2;
+  padding: 5px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importTips .text4 span {
+  display: block;
+  margin-top: 5px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importForm {
+  margin-top: 20px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importForm .text2 {
+  color: #aaaaaa;
+  margin-left: 10px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importForm .ant-radio-button-wrapper {
+  border-radius: 6px;
+  margin-left: 15px;
+  border: 1px solid #d9d9d9;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importForm .ant-radio-button-wrapper-checked {
+  border: 1px solid #2db7f5;
+  box-shadow: none;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importForm .ant-row {
+  margin-top: 27px;
+  margin-left: 9px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .importForm .import-button {
+  margin-left: 10px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .chooseImport {
+  margin-top: 20px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .preImport .chooseImport .text2 {
+  color: #aaaaaa;
+  margin-left: 10px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport {
+  display: none;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport.none {
+  display: block;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport .import-percent {
+  margin-top: 40px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport .onImport-text {
+  display: block;
+  margin-top: 45px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport .tips {
+  margin-top: 50px;
+  color: #aaaaaa;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport .tips.finish {
+  display: none;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport .tips span {
+  display: block;
+  margin-top: 5px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport .error {
+  margin-top: 50px;
+  color: #aaaaaa;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport .error.finish {
+  display: block;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport .error span {
+  display: block;
+  margin-top: 5px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport .error a {
+  color: #ff6565;
+  font-size: 12px;
+}
+.base-modal3 .ant-modal-content .ant-modal-body .onImport .closed {
+  position: absolute;
+  top: 506px;
+  right: 10px;
+}
+.base-modal1 form .ant-input-number {
+  width: 100%;
+}
+.base-modal2 .ant-input-number {
+  width: 100%;
+}
+.saas-icon {
+  display: inline-block;
+}
+.saas-icon-edit {
+  background-image: url(../../images/customersprite/edit.png);
+  background-position: 0px 0px;
+  width: 15px;
+  height: 15px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .saas-icon-edit {
+    background-image: url(../../images/customersprite/edit@2x.png);
+    background-size: 15px 15px;
+  }
+}
+.edit-arrow:hover .saas-icon-edit {
+  background-image: url(../../images/customersprite/edit_white.png);
+  background-position: 0px 0px;
+  width: 15px;
+  height: 15px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .edit-arrow:hover .saas-icon-edit {
+    background-image: url(../../images/customersprite/edit_white@2x.png);
+    background-size: 15px 15px;
+  }
+}
+.saas-icon-more {
+  background-image: url(../../images/customersprite/more.png);
+  background-position: 0px 0px;
+  width: 21px;
+  height: 5px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .saas-icon-more {
+    background-image: url(../../images/customersprite/more@2x.png);
+    background-size: 21px 5px;
+  }
+}
+.down-arrow:hover .saas-icon-more {
+  background-image: url(../../images/customersprite/more_hover.png);
+  background-position: 0px 0px;
+  width: 21px;
+  height: 5px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .down-arrow:hover .saas-icon-more {
+    background-image: url(../../images/customersprite/more_hover@2x.png);
+    background-size: 21px 5px;
+  }
+}

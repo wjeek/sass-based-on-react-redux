@@ -1,0 +1,181 @@
+//frame style and common
+@import "common.less";
+@import "../sprite.css";
+.root{
+  background-color: #ffffff;
+}
+.header .register{
+  display:none;
+
+}
+.header .pwd{
+  display:none;
+}
+.header .team{
+  display:none;
+}
+.header{
+  height: 70px;
+  background-color: #2b3139;
+  .new-logo{
+    position: absolute;
+    top: 16px;
+    left: 25px;
+  }
+}
+.body{
+    .body-content {
+      background: #ffffff;
+      width: 100%;
+      position: absolute;
+      top: 40px;
+      bottom: 91px;
+      min-height: 500px;
+      .login{
+        width: 350px;
+        height: 450px;
+        background-color: #ffffff;
+        margin: 0 auto;
+        //float: right;
+        //margin-right: 10%;
+        //margin-top: 25px;
+        .login-title{
+          text-align: center;
+          font-size: 18px;
+          //font-weight: bold;
+          font-family: @fontFamily;
+          color: @baseBackgroundcolor;
+        }
+        .example {
+          margin-left: 30px;
+          .mobileMsg{
+            color: #ff0000;
+          }
+          .ant-input {
+            height: 50px;
+            padding-bottom: 8px;
+            font-size: 14px;
+            margin-top: 22px;
+            padding-left: 23px;
+          }
+          .sprite-user{
+            display: block;
+            margin-left: 4px;
+            position: relative;
+            top: -34px;
+          }
+          .sprite-password {
+            display: inline-block;
+            position: relative;
+            left: -294px;
+          }
+          .number {
+            width: 300px;
+          }
+        }
+        .example.phone{
+          margin-top: 30px;
+        }
+        .example.pwd{
+          margin-top: -8px;
+          display: block;
+        }
+        .example.agree{
+          margin-top: 30px;
+
+          #rememberMe{
+            vertical-align: middle;
+          }
+
+          .rem{
+            vertical-align: middle;
+            margin-right: 5px;
+            cursor: pointer;
+            font-size: 14px;
+          }
+          .rem:hover .point{
+            display: block;
+            position: absolute;
+            width: 200px;
+            background-color: #ffe8d0;
+            margin-top: -82px;
+            font-size: 12px;
+            padding: 12px;
+            color: red;
+          }
+          .point{
+            display: none;
+          }
+          a.info-register{
+            float: right;
+            margin-right: 24px;
+            color: @baseBackgroundcolor;
+          }
+          a.info-forget{
+            float: left;
+            color: @baseBackgroundcolor;
+          }
+        }
+        .example.verification{
+          display: none;
+          &.showCode{
+            display: block;
+          }
+          .ant-input {
+          width:154px;
+          }
+          span.codes{
+            margin-left: 20px;
+          }
+          .getcode {
+            width: 130px;
+            height: 50px;
+            margin-left: 16px;
+          }
+        }
+        .example.submit {
+          .btn_submit {
+            width: 300px;
+            height: 50px;
+            margin-top: 30px;
+          }
+        }
+        .viplogin {
+          float: right;
+          margin-right: 23px;
+          margin-top: 30px;
+          .info {
+            display: block;
+            color: #6795d9;
+          }
+        }
+      }
+
+    }
+}
+//弹窗样式
+.ant-modal-content{
+  .ant-modal-body {
+    //margin-left: 98px;
+    margin-left: 50px;
+    margin-right: 50px;
+    .alter {
+      margin-left: -70px;
+      padding-left: 47px;
+    }
+    span.join {
+      display: block;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .horizontal {
+      height: 1px;
+      width: 300px;
+      margin-top: 20px;
+      background-color: #dcdcdc;
+    }
+    .character {
+      margin-top: 20px;
+    }
+  }
+}
